@@ -3285,8 +3285,8 @@ export const PAYMENT_MODES = [
 export const OUTLET_INFO = {
   "name": "Chaps-In Fast Food",
   "formerName": "Chaplin Fast Food (Est. 1994)",
-  "whatsappNumber": "918699822549",
-  "displayPhone": "+91 86998 22549",
+  "whatsappNumber": "919625244683",
+  "displayPhone": "+91 96252 44683",
   "altPhone": "+91 86999 64454",
   "landline": "0172-5007759",
   "hours": "11:30 AM – 11:00 PM (All 7 Days)",
@@ -3297,7 +3297,7 @@ export const OUTLET_INFO = {
     {
       "name": "Chaps-In Fast Food (Main Outlet)",
       "address": "Booth No. 49, Sector 34-C, Chandigarh, 160022 (Near Uttam Sweets)",
-      "phone": "+91 86998 22549",
+      "phone": "+91 96252 44683",
       "isPrimary": true
     },
     {
@@ -3309,7 +3309,7 @@ export const OUTLET_INFO = {
     {
       "name": "Chaps-In Panchkula",
       "address": "Shop No. 189, Sector 16, Panchkula, Haryana",
-      "phone": "+91 86998 22549",
+      "phone": "+91 96252 44683",
       "isPrimary": false
     }
   ]
