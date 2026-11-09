@@ -827,7 +827,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 460,
     "description": "Fresh paneer cutlets coated in seasoned batter and fried crispy. Perfect tea-time or party starter.",
-    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/paneer-fingers.jpg",
     "tags": [
       "Crispy Snack"
     ],
@@ -843,7 +843,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 890,
     "description": "Button mushrooms stuffed with spiced cheese & spinach, batter dipped and deep fried to golden crunch.",
-    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/mushroom-duplex.jpg",
     "tags": [
       "Chef Special",
       "Bestseller"
@@ -859,7 +859,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 580,
     "description": "Sweet American golden corn kernels tossed with spices, chopped spring onion, and lime juice.",
-    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/crispy-corns.jpg",
     "tags": [
       "Bar Favourite"
     ],
@@ -874,7 +874,7 @@ export const MENU_ITEMS = [
     "rating": 4.6,
     "reviewsCount": 430,
     "description": "Classic golden potato fries lightly salted and served piping hot with ketchup.",
-    "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/french-fries-salted.jpg",
     "tags": [
       "Kids Favourite"
     ],
@@ -889,7 +889,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 650,
     "description": "Crispy hot potato fries tossed in fiery African peri peri spice mix.",
-    "image": "https://images.unsplash.com/photo-1576107232684-1279f3908594?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/peri-peri-fries.jpg",
     "tags": [
       "Spicy Fries"
     ],
@@ -1876,7 +1876,7 @@ export const MENU_ITEMS = [
     "rating": 4.9,
     "reviewsCount": 1350,
     "description": "Super value snack party: Mushroom Duplex (6 pcs) + Paneer Fingers (6 pcs) + Spring Rolls (5 pcs).",
-    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/duplex-platter.jpg",
     "tags": [
       "Party Feast",
       "Bestseller"
@@ -1925,7 +1925,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 1140,
     "description": "Dal Makhani, Shahi Paneer, Steamed Rice, 3 Butter Rotis, and Fresh Salad.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/veg-thali.jpg",
     "tags": [
       "Complete Meal"
     ],
@@ -1940,7 +1940,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 960,
     "description": "Dal Makhani, Paneer dish, Rice, 3 Butter Rotis, Fresh Bundi Raita, and Salad.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/veg-thali-raita.jpg",
     "tags": [
       "With Raita"
     ],
@@ -1955,7 +1955,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 820,
     "description": "Yellow Dal / Dal Fry, Mix Vegetable, 3 Rotis, and Salad. Pocket friendly homely comfort.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/simple-veg-thali.jpg",
     "tags": [
       "Homely & Affordable"
     ],
@@ -2157,7 +2157,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 990,
     "description": "Crumbled fresh paneer tempered with ginger, green chillies, onions, tomatoes, and coriander.",
-    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/non-veg-thali.jpg",
     "tags": [
       "Scrambled Delight"
     ],
@@ -2187,7 +2187,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 1100,
     "description": "Blanched spinach puree tempered with garlic and ginger, gently simmered with cottage cheese.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/paneer-bhurji.jpg",
     "tags": [
       "Spinach Special"
     ],
@@ -2325,7 +2325,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 920,
     "description": "Authentic Amritsari spiced chickpeas stewed with pomegranate seeds and dry mango.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/palak-paneer.jpg",
     "tags": [
       "Amritsari Style"
     ],
@@ -2340,7 +2340,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 750,
     "description": "Rawalpindi style dark dry chickpeas cooked with special roasted spices and carom seeds.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/chana-masala.jpg",
     "tags": [
       "Pindi Special"
     ],
@@ -2355,7 +2355,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 610,
     "description": "Baby potatoes slow cooked on dum in rich spiced Kashmiri style fennel gravy.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/chana-pindi.jpg",
     "tags": [
       "Dum Cooked"
     ],
@@ -2563,7 +2563,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 890,
     "description": "Hard-boiled eggs browned in ghee and simmered in spicy Punjabi onion-tomato gravy.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/dum-aloo.jpg",
     "tags": [
       "Egg Lovers"
     ],
@@ -2697,7 +2697,7 @@ export const MENU_ITEMS = [
     "rating": 4.9,
     "reviewsCount": 3900,
     "description": "Legendary Sector 34 favourite! Stuffed with 100% real mozzarella cheese, baked in clay oven, served with rich Makhani gravy.",
-    "image": "./images/hero_cheesenaan.jpg",
+    "image": "./images/dishes/egg-curry.jpg",
     "tags": [
       "#1 Cheese Pull",
       "Sector 34 Icon"
@@ -2942,7 +2942,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 740,
     "description": "Chilled whipped yoghurt with spiced boondi, roasted cumin, and black salt.",
-    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/raita.jpg",
     "tags": [
       "Cooling Side"
     ],
@@ -3100,7 +3100,7 @@ export const MENU_ITEMS = [
     "rating": 4.9,
     "reviewsCount": 2200,
     "description": "Chandigarh's nostalgic favourite! Chilled, fizzy, zero-alcohol spiced fruit beer with frothy head.",
-    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/fruit-beer.jpg",
     "tags": [
       "Tricity Classic",
       "0.0% Alcohol"
@@ -3146,7 +3146,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 710,
     "description": "Traditional royal saffron and almond flavored creamy milk beverage.",
-    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/kesar-badam-shake.jpg",
     "tags": [
       "Royal Taste"
     ],
@@ -3176,7 +3176,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 590,
     "description": "Pink strawberry milkshake with crushed strawberry compote.",
-    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/strawberry-shake.jpg",
     "tags": [
       "Fruity Shake"
     ],
@@ -3191,7 +3191,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 730,
     "description": "Caramel and butterscotch praline milkshake with crunchy bits.",
-    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    "image": "./images/dishes/butterscotch-shake.jpg",
     "tags": [
       "Butterscotch Crunch"
     ],
