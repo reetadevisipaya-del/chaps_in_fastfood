@@ -756,21 +756,6 @@ export const MENU_ITEMS = [
     "spiceLevel": "Medium"
   },
   {
-    "id": "cigar-roll",
-    "name": "Cigar Roll (5 pcs)",
-    "category": "tandoori_snacks",
-    "price": 170,
-    "isVeg": true,
-    "rating": 4.7,
-    "reviewsCount": 380,
-    "description": "Crispy slender cigar rolls stuffed with spiced vegetables and cheese, served with sweet chilli dip.",
-    "image": "./images/dishes/crunchy-veg-spring-roll.jpg",
-    "tags": [
-      "Party Snack"
-    ],
-    "spiceLevel": "Mild"
-  },
-  {
     "id": "paneer-tikka",
     "name": "Paneer Tikka (8 pcs)",
     "category": "tandoori_snacks",
@@ -1276,7 +1261,7 @@ export const MENU_ITEMS = [
     "rating": 4.6,
     "reviewsCount": 380,
     "description": "Assorted vegetables with pineapple and bell peppers in a tangy Cantonese sweet & sour gravy.",
-    "image": "./images/dishes/mixed-veg-hot-garlic.jpg",
+    "image": "./images/dishes/vegetable-sweet-and-sour.jpg",
     "tags": [
       "Tangy Sweet"
     ],
@@ -2157,7 +2142,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 990,
     "description": "Crumbled fresh paneer tempered with ginger, green chillies, onions, tomatoes, and coriander.",
-    "image": "./images/dishes/non-veg-thali.jpg",
+    "image": "./images/dishes/paneer-bhurji.jpg",
     "tags": [
       "Scrambled Delight"
     ],
@@ -2187,7 +2172,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 1100,
     "description": "Blanched spinach puree tempered with garlic and ginger, gently simmered with cottage cheese.",
-    "image": "./images/dishes/paneer-bhurji.jpg",
+    "image": "./images/dishes/palak-paneer.jpg",
     "tags": [
       "Spinach Special"
     ],
@@ -2325,7 +2310,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 920,
     "description": "Authentic Amritsari spiced chickpeas stewed with pomegranate seeds and dry mango.",
-    "image": "./images/dishes/palak-paneer.jpg",
+    "image": "./images/dishes/chana-masala.jpg",
     "tags": [
       "Amritsari Style"
     ],
@@ -2340,7 +2325,7 @@ export const MENU_ITEMS = [
     "rating": 4.8,
     "reviewsCount": 750,
     "description": "Rawalpindi style dark dry chickpeas cooked with special roasted spices and carom seeds.",
-    "image": "./images/dishes/chana-masala.jpg",
+    "image": "./images/dishes/chana-pindi.jpg",
     "tags": [
       "Pindi Special"
     ],
@@ -2355,7 +2340,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 610,
     "description": "Baby potatoes slow cooked on dum in rich spiced Kashmiri style fennel gravy.",
-    "image": "./images/dishes/chana-pindi.jpg",
+    "image": "./images/dishes/dum-aloo.jpg",
     "tags": [
       "Dum Cooked"
     ],
@@ -2563,7 +2548,7 @@ export const MENU_ITEMS = [
     "rating": 4.7,
     "reviewsCount": 890,
     "description": "Hard-boiled eggs browned in ghee and simmered in spicy Punjabi onion-tomato gravy.",
-    "image": "./images/dishes/dum-aloo.jpg",
+    "image": "./images/dishes/egg-curry.jpg",
     "tags": [
       "Egg Lovers"
     ],
@@ -2697,7 +2682,7 @@ export const MENU_ITEMS = [
     "rating": 4.9,
     "reviewsCount": 3900,
     "description": "Legendary Sector 34 favourite! Stuffed with 100% real mozzarella cheese, baked in clay oven, served with rich Makhani gravy.",
-    "image": "./images/dishes/egg-curry.jpg",
+    "image": "./images/dishes/cheese-naan-gravy.jpg",
     "tags": [
       "#1 Cheese Pull",
       "Sector 34 Icon"

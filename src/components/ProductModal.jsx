@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Star, Plus, Minus, ShoppingBag, ShieldAlert } from 'lucide-react';
+import heroMomos from '../assets/hero_momos.jpg';
 
 export default function ProductModal({ item, initialVariant, onClose, onAddToCart }) {
   if (!item) return null;
@@ -38,7 +39,8 @@ export default function ProductModal({ item, initialVariant, onClose, onAddToCar
             src={item.image}
             alt={item.name}
             onError={(e) => {
-              e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80';
+              e.currentTarget.onerror = null;
+              e.currentTarget.src = heroMomos;
             }}
             className="w-full h-full object-cover"
           />
