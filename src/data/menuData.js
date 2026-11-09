@@ -2,1954 +2,2752 @@
 // Sector 34-C Chandigarh (Formerly Chaplin Fast Food)
 
 export const MENU_CATEGORIES = [
-  { id: 'all', name: 'All Dishes', icon: '🍽️' },
-  { id: 'bestsellers', name: '⭐ Bestsellers', icon: '🔥' },
-  { id: 'combos', name: 'Combos For 1', icon: '🍱' },
-  { id: 'momos', name: 'Legendary Momos', icon: '🥟' },
-  { id: 'tandoori_bread', name: 'Cheese Naan & Breads', icon: '🫓' },
-  { id: 'chinese', name: 'Chinese & Noodles', icon: '🍜' },
-  { id: 'tandoori_snacks', name: 'Tikka, Chaap & Starters', icon: '🍢' },
-  { id: 'curries', name: 'North Indian Curries', icon: '🍛' },
-  { id: 'platters', name: 'Platters & Thalis', icon: '🥘' },
-  { id: 'beverages', name: 'Boba, Shakes & Drinks', icon: '🧋' },
+  {
+    "id": "all",
+    "name": "All Dishes",
+    "icon": "🍽️"
+  },
+  {
+    "id": "bestsellers",
+    "name": "⭐ Bestsellers",
+    "icon": "🔥"
+  },
+  {
+    "id": "combos",
+    "name": "Combos For 1",
+    "icon": "🍱"
+  },
+  {
+    "id": "momos",
+    "name": "Legendary Momos",
+    "icon": "🥟"
+  },
+  {
+    "id": "tandoori_bread",
+    "name": "Cheese Naan & Breads",
+    "icon": "🫓"
+  },
+  {
+    "id": "chinese",
+    "name": "Chinese & Noodles",
+    "icon": "🍜"
+  },
+  {
+    "id": "tandoori_snacks",
+    "name": "Tikka, Chaap & Starters",
+    "icon": "🍢"
+  },
+  {
+    "id": "curries",
+    "name": "North Indian Curries",
+    "icon": "🍛"
+  },
+  {
+    "id": "platters",
+    "name": "Platters & Thalis",
+    "icon": "🥘"
+  },
+  {
+    "id": "beverages",
+    "name": "Boba, Shakes & Drinks",
+    "icon": "🧋"
+  }
 ];
 
 export const MENU_ITEMS = [
-  // ================= COMBOS FOR 1 =================
   {
-    id: 'combo-paneer-chili-noodles',
-    name: 'Paneer Chili + Noodles Combo',
-    category: 'combos',
-    price: 260,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1420,
-    description: 'Crispy wok-tossed Paneer Chili paired with classic Veg Hakka Chowmein noodles. High-protein, satisfying single meal.',
-    image: 'https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Value Combo', 'Bestseller'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'combo-paneer-chili-rice',
-    name: 'Paneer Chili + Fried Rice Combo',
-    category: 'combos',
-    price: 260,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 890,
-    description: 'Hot sizzling Paneer Chili paired with aromatic garlic vegetable fried rice.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
-    tags: ['Combo For 1'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'combo-veg-manchurian-noodles',
-    name: 'Veg Manchurian + Noodles Combo',
-    category: 'combos',
-    price: 240,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.8,
-    reviewsCount: 1120,
-    description: 'Savory vegetable Manchurian balls in rich dark soy gravy accompanied by steaming hot wok chowmein.',
-    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
-    tags: ['Budget Friendly', 'Classic Pair'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'combo-veg-manchurian-rice',
-    name: 'Veg Manchurian + Fried Rice Combo',
-    category: 'combos',
-    price: 240,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 780,
-    description: 'Crisp veg Manchurian in garlic gravy paired with classic garden fried rice.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
-    tags: ['Combo For 1'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'combo-chili-chicken-noodles',
-    name: 'Chili Chicken + Noodles Combo',
-    category: 'combos',
-    price: 290,
-    isVeg: false,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1350,
-    description: 'Boneless tender chicken pieces tossed with capsicum, onions & spicy Indo-Chinese sauce, served with Hakka noodles.',
-    image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chicken Combo', 'High Protein'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'combo-chili-chicken-rice',
-    name: 'Chili Chicken + Fried Rice Combo',
-    category: 'combos',
-    price: 290,
-    isVeg: false,
-    rating: 4.8,
-    reviewsCount: 910,
-    description: 'Juicy chili chicken pieces served with savory egg/veg fried rice.',
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chicken Combo'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'combo-dal-makhni-roti',
-    name: 'Dal Makhni + 3 Butter Roti Combo',
-    category: 'combos',
-    price: 160,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1640,
-    description: 'Slow-simmered Punjabi black dal with rich dollops of butter, served with 3 piping hot tandoori butter rotis.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Pocket Friendly', 'Pure Comfort', '₹160 Only'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'combo-chaap-gravy-rumali',
-    name: 'Chaap Gravy + 2 Rumali Roti Combo',
-    category: 'combos',
-    price: 180,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 650,
-    description: 'Juicy roasted soya chaap cooked in spiced tomato-onion masala served with soft paper-thin rumali rotis.',
-    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80',
-    tags: ['Soya Special', '₹180 Only'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'combo-kadhai-paneer-roti',
-    name: 'Kadhai Paneer + 3 Butter Roti Combo',
-    category: 'combos',
-    price: 180,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 940,
-    description: 'Fresh cottage cheese stir-fried with bell peppers in freshly pounded kadhai spices, served with 3 butter rotis.',
-    image: 'https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80',
-    tags: ['Full Meal', 'Student Special'],
-    spiceLevel: 'Medium'
-  },
-
-  // ================= MOMOS =================
-  {
-    id: 'momo-kurkure',
-    name: 'Kurkure Momos (8 Pieces)',
-    category: 'momos',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Paneer (8 Pcs)', price: 270 },
-      { name: 'Veg (8 Pcs)', price: 230 },
-      { name: 'Chicken (8 Pcs)', price: 270 }
+    "id": "combo-paneer-chili-noodles",
+    "name": "Paneer Chili + Noodles Combo",
+    "category": "combos",
+    "price": 260,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "description": "Crispy wok-tossed Paneer Chili paired with classic Veg Hakka Chowmein noodles. High-protein, satisfying single meal.",
+    "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Value Combo",
+      "Bestseller"
     ],
-    isBestseller: true,
-    hasVideo: true,
-    videoUrl: '/videos/delicious_food.webm',
-    rating: 4.9,
-    reviewsCount: 2940,
-    description: 'Chaps legendary crispy coated momos fried golden brown with an explosive crunch, served with fiery red momo chutney and garlic mayonnaise.',
-    image: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80',
-    tags: ['Extra Crunchy', 'Top Seller', 'Insta Viral'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'momo-afghani',
-    name: 'Afghani Momos in Creamy Gravy (8 Pcs)',
-    category: 'momos',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Paneer Afghani', price: 270 },
-      { name: 'Veg Afghani', price: 230 },
-      { name: 'Chicken Afghani', price: 270 }
+    "id": "combo-paneer-chili-rice",
+    "name": "Paneer Chili + Fried Rice Combo",
+    "category": "combos",
+    "price": 260,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 890,
+    "description": "Hot sizzling Paneer Chili paired with aromatic garlic vegetable fried rice.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Combo For 1"
     ],
-    isBestseller: true,
-    hasVideo: true,
-    videoUrl: '/videos/hero_video.webm',
-    rating: 4.9,
-    reviewsCount: 2420,
-    description: 'Tender momos tossed in a luscious, velvety cashew-cream gravy with cracked black pepper and aromatic spices.',
-    image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rich Gravy', 'Must Try', 'Chef Special'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'momo-tandoori',
-    name: 'Tandoori Momos (8 Pieces)',
-    category: 'momos',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Paneer Tandoori', price: 270 },
-      { name: 'Veg Tandoori', price: 230 },
-      { name: 'Chicken Tandoori', price: 270 }
+    "id": "combo-veg-manchurian-noodles",
+    "name": "Veg Manchurian + Noodles Combo",
+    "category": "combos",
+    "price": 240,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.8,
+    "reviewsCount": 1120,
+    "description": "Savory vegetable Manchurian balls in rich dark soy gravy accompanied by steaming hot wok chowmein.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/887966e8-1737-4143-ba86-68120ca14cc0/WOW-VEG-Manchurian-Noodles.jpeg",
+    "tags": [
+      "Budget Friendly",
+      "Classic Pair"
     ],
-    isBestseller: true,
-    rating: 4.8,
-    reviewsCount: 1390,
-    description: 'Charcoal-grilled momos marinated in spicy Punjabi tandoori red masala, served with mint dip and onion rings.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Clay Tandoor', 'Smoky'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'momo-malai-tandoori',
-    name: 'Malai Tandoori Momos (8 Pieces)',
-    category: 'momos',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Paneer Malai', price: 270 },
-      { name: 'Veg Malai', price: 230 },
-      { name: 'Chicken Malai', price: 270 }
+    "id": "combo-veg-manchurian-rice",
+    "name": "Veg Manchurian + Fried Rice Combo",
+    "category": "combos",
+    "price": 240,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 780,
+    "description": "Crisp veg Manchurian in garlic gravy paired with classic garden fried rice.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Combo For 1"
     ],
-    rating: 4.8,
-    reviewsCount: 940,
-    description: 'Tandoor roasted momos brushed with spiced cream, melted butter and freshly grated cheese.',
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
-    tags: ['Creamy & Smoky'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'momo-peri-peri',
-    name: 'Peri Peri Creamy Momos (8 Pcs)',
-    category: 'momos',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Paneer Peri Peri', price: 270 },
-      { name: 'Veg Peri Peri', price: 230 },
-      { name: 'Chicken Peri Peri', price: 270 }
+    "id": "combo-chili-chicken-noodles",
+    "name": "Chili Chicken + Noodles Combo",
+    "category": "combos",
+    "price": 290,
+    "isVeg": false,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1350,
+    "description": "Boneless tender chicken pieces tossed with capsicum, onions & spicy Indo-Chinese sauce, served with Hakka noodles.",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chicken Combo",
+      "High Protein"
     ],
-    rating: 4.7,
-    reviewsCount: 760,
-    description: 'Golden fried momos tossed with African peri peri spices and rich cream emulsion.',
-    image: 'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Zesty Peri Peri'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Spicy"
   },
   {
-    id: 'momo-honey-chilli',
-    name: 'Honey Chilli Momos (8 Pieces)',
-    category: 'momos',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Paneer Honey Chilli', price: 270 },
-      { name: 'Veg Honey Chilli', price: 230 },
-      { name: 'Chicken Honey Chilli', price: 270 }
+    "id": "combo-chili-chicken-rice",
+    "name": "Chili Chicken + Fried Rice Combo",
+    "category": "combos",
+    "price": 290,
+    "isVeg": false,
+    "rating": 4.8,
+    "reviewsCount": 910,
+    "description": "Juicy chili chicken pieces served with savory egg/veg fried rice.",
+    "image": "https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chicken Combo"
     ],
-    rating: 4.8,
-    reviewsCount: 820,
-    description: 'Crispy fried momos glazed in sticky spicy-sweet garlic honey sauce and toasted sesame.',
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80',
-    tags: ['Sweet & Spicy'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Spicy"
   },
   {
-    id: 'momo-steamed',
-    name: 'Steamed Momos (8 Pieces)',
-    category: 'momos',
-    price: 170,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Steamed', price: 150 },
-      { name: 'Paneer Steamed', price: 170 },
-      { name: 'Chicken Steamed', price: 170 }
+    "id": "combo-dal-makhni-roti",
+    "name": "Dal Makhni + 3 Butter Roti Combo",
+    "category": "combos",
+    "price": 160,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1640,
+    "description": "Slow-simmered Punjabi black dal with rich dollops of butter, served with 3 piping hot tandoori butter rotis.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Pocket Friendly",
+      "Pure Comfort",
+      "₹160 Only"
     ],
-    rating: 4.7,
-    reviewsCount: 1100,
-    description: 'Delicate hand-rolled momos packed with finely chopped mountain vegetables and served with smoking momo sauce.',
-    image: 'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80',
-    tags: ['Healthy', 'Original Taste'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'momo-fried',
-    name: 'Crispy Fried Momos (8 Pieces)',
-    category: 'momos',
-    price: 200,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Fried', price: 170 },
-      { name: 'Paneer Fried', price: 200 },
-      { name: 'Chicken Fried', price: 200 }
+    "id": "combo-chaap-gravy-rumali",
+    "name": "Chaap Gravy + 2 Rumali Roti Combo",
+    "category": "combos",
+    "price": 180,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 650,
+    "description": "Juicy roasted soya chaap cooked in spiced tomato-onion masala served with soft paper-thin rumali rotis.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/332d4905-3578-48f8-97d6-c9613160dfe3/Blue-Tribe-Foods-Ready-To-Eat-Afghani-Soya-Chaap.jpg",
+    "tags": [
+      "Soya Special",
+      "₹180 Only"
     ],
-    rating: 4.7,
-    reviewsCount: 890,
-    description: 'Golden deep-fried momos with crispy shell and piping hot juicy core.',
-    image: 'https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=800&q=80',
-    tags: ['Classic Fried'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'momo-platter',
-    name: 'Chaps Grand Momo Platter (8 Pcs)',
-    category: 'momos',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Paneer Platter', price: 270 },
-      { name: 'Veg Platter', price: 230 },
-      { name: 'Non-Veg Chicken Platter', price: 270 }
+    "id": "combo-kadhai-paneer-roti",
+    "name": "Kadhai Paneer + 3 Butter Roti Combo",
+    "category": "combos",
+    "price": 180,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 940,
+    "description": "Fresh cottage cheese stir-fried with bell peppers in freshly pounded kadhai spices, served with 3 butter rotis.",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Full Meal",
+      "Student Special"
     ],
-    isBestseller: true,
-    rating: 5.0,
-    reviewsCount: 1980,
-    description: 'The ultimate sampler: 2 Steamed + 2 Kurkure + 2 Malai Tandoori + 2 Charred Tandoori Momos.',
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
-    tags: ['4 Flavours in 1', 'Crowd Favorite'],
-    spiceLevel: 'Medium'
-  },
-
-  // ================= CHEESE NAAN & TANDOORI BREADS =================
-  {
-    id: 'bread-cheese-naan',
-    name: 'Cheese Naan With Gravy',
-    category: 'tandoori_bread',
-    price: 220,
-    isVeg: true,
-    isBestseller: true,
-    hasVideo: true,
-    videoUrl: '/videos/hero_video.webm',
-    rating: 5.0,
-    reviewsCount: 3840,
-    description: 'Chandigarh’s most famous late-night obsession! Clay-oven tandoori naan stuffed with molten mozzarella & amul cheese, served with rich Makhani gravy.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Cheese Pull', 'Chandigarh Famous', 'Legendary'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'bread-chicken-naan',
-    name: 'Chicken Naan With Gravy',
-    category: 'tandoori_bread',
-    price: 280,
-    isVeg: false,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1480,
-    description: 'Fluffy tandoori naan stuffed with spiced minced chicken keema and melting herbs, paired with thick spicy chicken gravy.',
-    image: 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80',
-    tags: ['Hearty Keema', 'Student Favorite'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'bread-onion-naan',
-    name: 'Onion Naan With Gravy',
-    category: 'tandoori_bread',
-    price: 220,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 560,
-    description: 'Stuffed with spiced chopped onions and coriander, baked crisp and served with rich Makhani gravy.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Stuffed Naan'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'bread-garlic-naan',
-    name: 'Garlic Naan',
-    category: 'tandoori_bread',
-    price: 80,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1890,
-    description: 'Fluffy clay-oven bread loaded with roasted garlic bits and fresh coriander, brushed with butter.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Fresh Clay Oven'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'bread-butter-naan',
-    name: 'Butter Naan',
-    category: 'tandoori_bread',
-    price: 60,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1450,
-    description: 'Soft layered tandoori naan dripping with pure Amul butter.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Classic Naan'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'bread-plain-naan',
-    name: 'Plain Naan',
-    category: 'tandoori_bread',
-    price: 50,
-    isVeg: true,
-    rating: 4.6,
-    reviewsCount: 420,
-    description: 'Classic clay oven baked leavened bread.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Tandoori Bread'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'bread-butter-lachha',
-    name: 'Butter Lachha Parantha',
-    category: 'tandoori_bread',
-    price: 50,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 780,
-    description: 'Multi-layered crispy flaky wheat parantha made in the tandoor with golden butter.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Multi Layer'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'bread-garlic-parantha',
-    name: 'Garlic Parantha',
-    category: 'tandoori_bread',
-    price: 80,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 410,
-    description: 'Flaky layered wheat bread coated with chopped garlic and butter.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Layered Parantha'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'bread-mirchi-parantha',
-    name: 'Mirchi Parantha',
-    category: 'tandoori_bread',
-    price: 80,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 380,
-    description: 'Spicy layered parantha studded with green chillies and roasted spices.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Spicy Parantha'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'bread-missi-roti',
-    name: 'Missi Roti',
-    category: 'tandoori_bread',
-    price: 60,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 650,
-    description: 'Traditional spiced gram flour (besan) and wheat roti with kasoori methi.',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80',
-    tags: ['Traditional Punjabi'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'bread-tandoori-butter-roti',
-    name: 'Tandoori Butter Roti',
-    category: 'tandoori_bread',
-    price: 25,
-    isVeg: true,
-    rating: 4.9,
-    reviewsCount: 3100,
-    description: 'Piping hot whole wheat roti freshly baked in the clay tandoor with Amul butter.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Clay Oven Roti', '₹25 Only'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'bread-tandoori-roti',
-    name: 'Tandoori Roti (Plain)',
-    category: 'tandoori_bread',
-    price: 20,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 2100,
-    description: 'Crispy plain whole wheat tandoori roti.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Healthy Whole Wheat', '₹20 Only'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'bread-rumali-roti',
-    name: 'Rumali Roti',
-    category: 'tandoori_bread',
-    price: 20,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1540,
-    description: 'Thin handkerchief soft bread, perfect with gravies and chaaps.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Paper Thin', '₹20 Only'],
-    spiceLevel: 'Mild'
-  },
-
-  // ================= CHINESE, NOODLES & FRIED RICE =================
-  {
-    id: 'chinese-honey-chilli-potato',
-    name: 'Honey Chilli Potato',
-    category: 'chinese',
-    price: 280,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 2820,
-    description: 'Crisp hand-cut potato fingers tossed in honey, chilli sauce, spring greens and toasted sesame seeds. Chandigarh favourite!',
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80',
-    tags: ['Super Crisp', 'Legendary Star'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-honey-chilli-cauliflower',
-    name: 'Honey Chilli Cauliflower',
-    category: 'chinese',
-    price: 280,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1890,
-    description: 'Batter-fried crunchy cauliflower florets glazed in spicy-sweet garlic sauce. The cult snack that Sector 34 swears by.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chaplin Legacy', 'Crispy Delight'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-chaplin-special-noodles',
-    name: 'Chaplin Special Noodles',
-    category: 'chinese',
-    price: 250,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Special', price: 250 },
-      { name: 'Non-Veg Special', price: 300 }
+    "id": "momo-kurkure",
+    "name": "Kurkure Momos (8 Pieces)",
+    "category": "momos",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Paneer (8 Pcs)",
+        "price": 270
+      },
+      {
+        "name": "Veg (8 Pcs)",
+        "price": 230
+      },
+      {
+        "name": "Chicken (8 Pcs)",
+        "price": 270
+      }
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 2210,
-    description: 'Our house specialty noodles loaded with shredded vegetables, paneer chunks, secret seasoning and aromatic wok breath.',
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80',
-    tags: ['Original Recipe', 'House Special'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-veg-chowmein',
-    name: 'Chowmein (Street Style)',
-    category: 'chinese',
-    price: 170,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Chowmein', price: 170 },
-      { name: 'Egg Chowmein', price: 200 },
-      { name: 'Non-Veg Chicken', price: 250 }
+    "isBestseller": true,
+    "hasVideo": true,
+    "videoUrl": "/videos/delicious_food.webm",
+    "rating": 4.9,
+    "reviewsCount": 2940,
+    "description": "Chaps legendary crispy coated momos fried golden brown with an explosive crunch, served with fiery red momo chutney and garlic mayonnaise.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/919ab32b-dc68-48bc-8115-73330ee0cb2f/VEG-KURKURE-MOMOS-PA.jpeg",
+    "tags": [
+      "Extra Crunchy",
+      "Top Seller",
+      "Insta Viral"
     ],
-    rating: 4.7,
-    reviewsCount: 1840,
-    description: 'Thin street style wok-fried noodles with julienned cabbage, carrots and fragrant seasonings.',
-    image: 'https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80',
-    tags: ['Street Style', 'Best Value'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'chinese-garlic-chowmein',
-    name: 'Garlic Chowmein',
-    category: 'chinese',
-    price: 200,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Garlic', price: 200 },
-      { name: 'Non-Veg Chicken', price: 270 }
+    "id": "momo-afghani",
+    "name": "Afghani Momos in Creamy Gravy (8 Pcs)",
+    "category": "momos",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Paneer Afghani",
+        "price": 270
+      },
+      {
+        "name": "Veg Afghani",
+        "price": 230
+      },
+      {
+        "name": "Chicken Afghani",
+        "price": 270
+      }
     ],
-    rating: 4.8,
-    reviewsCount: 890,
-    description: 'Wok tossed noodles infused with burnt golden garlic and fiery chillies.',
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80',
-    tags: ['Garlic Burst'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-paneer-chowmein',
-    name: 'Paneer Chowmein',
-    category: 'chinese',
-    price: 280,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 970,
-    description: 'Noodles tossed with fried paneer fingers, bell peppers and soya sauce.',
-    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
-    tags: ['Paneer Loaded'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-hakka-noodles',
-    name: 'Hakka Noodles',
-    category: 'chinese',
-    price: 250,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Hakka', price: 250 },
-      { name: 'Non-Veg Hakka', price: 300 }
+    "isBestseller": true,
+    "hasVideo": true,
+    "videoUrl": "/videos/hero_video.webm",
+    "rating": 4.9,
+    "reviewsCount": 2420,
+    "description": "Tender momos tossed in a luscious, velvety cashew-cream gravy with cracked black pepper and aromatic spices.",
+    "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Rich Gravy",
+      "Must Try",
+      "Chef Special"
     ],
-    rating: 4.8,
-    reviewsCount: 1280,
-    description: 'Authentic Hakka noodles tossed with bell peppers, spring onions and light soy.',
-    image: 'https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=800&q=80',
-    tags: ['Hakka Classic'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'chinese-fried-rice',
-    name: 'Fried Rice',
-    category: 'chinese',
-    price: 240,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Fried Rice', price: 240 },
-      { name: 'Egg Fried Rice', price: 260 },
-      { name: 'Paneer Fried Rice', price: 280 },
-      { name: 'Non-Veg Chicken', price: 270 }
+    "id": "momo-tandoori",
+    "name": "Tandoori Momos (8 Pieces)",
+    "category": "momos",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Paneer Tandoori",
+        "price": 270
+      },
+      {
+        "name": "Veg Tandoori",
+        "price": 230
+      },
+      {
+        "name": "Chicken Tandoori",
+        "price": 270
+      }
     ],
-    rating: 4.7,
-    reviewsCount: 1100,
-    description: 'Long-grain basmati rice tossed with garden veggies and light soy in a flaming wok.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
-    tags: ['Wok Fried Rice'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'chinese-chilly-garlic-rice',
-    name: 'Chilly Garlic Rice',
-    category: 'chinese',
-    price: 250,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Chilly Garlic', price: 250 },
-      { name: 'Non-Veg Chicken', price: 280 }
+    "isBestseller": true,
+    "rating": 4.8,
+    "reviewsCount": 1390,
+    "description": "Charcoal-grilled momos marinated in spicy Punjabi tandoori red masala, served with mint dip and onion rings.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Clay Tandoor",
+      "Smoky"
     ],
-    rating: 4.8,
-    reviewsCount: 940,
-    description: 'Spicy rice tossed with chopped red chillies and roasted garlic.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
-    tags: ['Spicy Garlic'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Spicy"
   },
   {
-    id: 'chinese-chaplin-special-rice',
-    name: 'Chaplin Special Rice',
-    category: 'chinese',
-    price: 270,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Special Rice', price: 270 },
-      { name: 'Non-Veg Special Rice', price: 300 }
+    "id": "momo-malai-tandoori",
+    "name": "Malai Tandoori Momos (8 Pieces)",
+    "category": "momos",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Paneer Malai",
+        "price": 270
+      },
+      {
+        "name": "Veg Malai",
+        "price": 230
+      },
+      {
+        "name": "Chicken Malai",
+        "price": 270
+      }
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1420,
-    description: 'Chef signature fried rice loaded with paneer/chicken, exotic vegetables and secret masala.',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80',
-    tags: ['House Special'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-chilli-chicken',
-    name: 'Chilli Chicken (Boneless / Bone)',
-    category: 'chinese',
-    price: 350,
-    isVeg: false,
-    variants: [
-      { name: 'Boneless Half', price: 350 },
-      { name: 'Boneless Full', price: 600 },
-      { name: 'With Bone Half', price: 350 },
-      { name: 'With Bone Full', price: 600 }
+    "rating": 4.8,
+    "reviewsCount": 940,
+    "description": "Tandoor roasted momos brushed with spiced cream, melted butter and freshly grated cheese.",
+    "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Creamy & Smoky"
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1980,
-    description: 'Crispy fried chicken tossed with diced green peppers, onions, dark soy and Chinese five-spice chilli oil.',
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80',
-    tags: ['Juicy & Spicy', 'Best with Fried Rice'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'chinese-chicken-manchurian',
-    name: 'Chicken Manchurian',
-    category: 'chinese',
-    price: 350,
-    isVeg: false,
-    variants: [
-      { name: 'Half (4 pcs)', price: 350 },
-      { name: 'Full (8 pcs)', price: 600 }
+    "id": "momo-peri-peri",
+    "name": "Peri Peri Creamy Momos (8 Pcs)",
+    "category": "momos",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Paneer Peri Peri",
+        "price": 270
+      },
+      {
+        "name": "Veg Peri Peri",
+        "price": 230
+      },
+      {
+        "name": "Chicken Peri Peri",
+        "price": 270
+      }
     ],
-    rating: 4.8,
-    reviewsCount: 960,
-    description: 'Tender chicken balls cooked in rich brown garlic coriander Manchurian sauce.',
-    image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80',
-    tags: ['Manchurian Sauce'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-chicken-ginger',
-    name: 'Chicken Ginger',
-    category: 'chinese',
-    price: 350,
-    isVeg: false,
-    variants: [
-      { name: 'Half', price: 350 },
-      { name: 'Full', price: 600 }
+    "rating": 4.7,
+    "reviewsCount": 760,
+    "description": "Golden fried momos tossed with African peri peri spices and rich cream emulsion.",
+    "image": "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Zesty Peri Peri"
     ],
-    rating: 4.7,
-    reviewsCount: 520,
-    description: 'Succulent chicken tossed with julienned fresh ginger and spring onions in dark sauce.',
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80',
-    tags: ['Ginger Aroma'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Spicy"
   },
   {
-    id: 'chinese-chicken-garlic-sauce',
-    name: 'Chicken Garlic Sauce',
-    category: 'chinese',
-    price: 350,
-    isVeg: false,
-    variants: [
-      { name: 'Half', price: 350 },
-      { name: 'Full', price: 600 }
+    "id": "momo-honey-chilli",
+    "name": "Honey Chilli Momos (8 Pieces)",
+    "category": "momos",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Paneer Honey Chilli",
+        "price": 270
+      },
+      {
+        "name": "Veg Honey Chilli",
+        "price": 230
+      },
+      {
+        "name": "Chicken Honey Chilli",
+        "price": 270
+      }
     ],
-    rating: 4.8,
-    reviewsCount: 680,
-    description: 'Chicken cooked in spicy red hot garlic sauce.',
-    image: 'https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80',
-    tags: ['Hot Garlic'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'chinese-chicken-sweet-sour',
-    name: 'Chicken Sweet & Sour',
-    category: 'chinese',
-    price: 350,
-    isVeg: false,
-    variants: [
-      { name: 'Half', price: 350 },
-      { name: 'Full', price: 600 }
+    "rating": 4.8,
+    "reviewsCount": 820,
+    "description": "Crispy fried momos glazed in sticky spicy-sweet garlic honey sauce and toasted sesame.",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Sweet & Spicy"
     ],
-    rating: 4.6,
-    reviewsCount: 420,
-    description: 'Crisp chicken cubes with bell peppers and pineapple chunks in sweet & tangy sauce.',
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80',
-    tags: ['Sweet & Tangy'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'chinese-honey-chilli-chicken',
-    name: 'Honey Chilli Chicken',
-    category: 'chinese',
-    price: 350,
-    isVeg: false,
-    variants: [
-      { name: 'Half', price: 350 },
-      { name: 'Full', price: 600 }
+    "id": "momo-steamed",
+    "name": "Steamed Momos (8 Pieces)",
+    "category": "momos",
+    "price": 170,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Steamed",
+        "price": 150
+      },
+      {
+        "name": "Paneer Steamed",
+        "price": 170
+      },
+      {
+        "name": "Chicken Steamed",
+        "price": 170
+      }
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1450,
-    description: 'Crispy fried boneless chicken bites glazed in honey chilli sauce and sesame.',
-    image: 'https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=800&q=80',
-    tags: ['Glazed Honey Chilli'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-veg-manchurian',
-    name: 'Veg Manchurian',
-    category: 'chinese',
-    price: 280,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1320,
-    description: 'Minced vegetable dumplings tossed in garlic, ginger, green chillies and savory coriander soy sauce.',
-    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
-    tags: ['All-Time Classic'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-paneer-chili',
-    name: 'Paneer Chili',
-    category: 'chinese',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1610,
-    description: 'Fresh malai paneer cubes wok tossed with crunchy bell peppers, onions and zesty hot garlic sauce.',
-    image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Standard Malai Paneer'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-paneer-manchurian',
-    name: 'Paneer Manchurian',
-    category: 'chinese',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 710,
-    description: 'Crispy coated paneer cubes tossed in rich Manchurian gravy.',
-    image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Paneer Manchurian'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-mushroom-chili',
-    name: 'Mushroom Chili',
-    category: 'chinese',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 840,
-    description: 'Fresh button mushrooms wok tossed with onions, green chillies and dark soya sauce.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Button Mushrooms'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'chinese-paneer-garlic-sauce',
-    name: 'Paneer Garlic Sauce',
-    category: 'chinese',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 490,
-    description: 'Paneer fingers cooked in a spicy pungent garlic sauce.',
-    image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Garlic Paneer'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'chinese-veg-sweet-sour',
-    name: 'Vegetable Sweet & Sour',
-    category: 'chinese',
-    price: 300,
-    isVeg: true,
-    rating: 4.6,
-    reviewsCount: 380,
-    description: 'Diced garden vegetables in Chinese sweet and sour sauce.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Sweet & Sour'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'chinese-mix-veg-garlic',
-    name: 'Mix Veg Hot Garlic Sauce',
-    category: 'chinese',
-    price: 300,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 420,
-    description: 'Fresh crisp vegetables simmered in spicy red hot garlic sauce.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Hot Garlic Veg'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'chinese-chopsuey',
-    name: 'Chopsuey',
-    category: 'chinese',
-    price: 180,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Chopsuey', price: 180 },
-      { name: 'Chinese Chopsuey', price: 180 },
-      { name: 'American Chopsuey', price: 270 },
-      { name: 'Non-Veg Chopsuey', price: 250 }
+    "rating": 4.7,
+    "reviewsCount": 1100,
+    "description": "Delicate hand-rolled momos packed with finely chopped mountain vegetables and served with smoking momo sauce.",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Healthy",
+      "Original Taste"
     ],
-    rating: 4.7,
-    reviewsCount: 620,
-    description: 'Crispy fried noodles topped with sweet and tangy saucy stir-fried vegetables.',
-    image: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80',
-    tags: ['Crispy Noodles'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'chinese-spring-roll',
-    name: 'Spring Rolls',
-    category: 'chinese',
-    price: 160,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Spring Roll', price: 160 },
-      { name: 'Cigar Roll (5 Pcs)', price: 170 },
-      { name: 'Crunchy Spring Roll', price: 200 },
-      { name: 'Paneer Spring Roll', price: 220 },
-      { name: 'Chicken Spring Roll', price: 220 }
+    "id": "momo-fried",
+    "name": "Crispy Fried Momos (8 Pieces)",
+    "category": "momos",
+    "price": 200,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Fried",
+        "price": 170
+      },
+      {
+        "name": "Paneer Fried",
+        "price": 200
+      },
+      {
+        "name": "Chicken Fried",
+        "price": 200
+      }
     ],
-    isBestseller: true,
-    rating: 4.8,
-    reviewsCount: 1680,
-    description: 'Crispy fried spring rolls stuffed with seasoned noodles and vegetables, served with sweet-chilli dip.',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
-    tags: ['Crispy Snack'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'chinese-soups',
-    name: 'Hot & Sour / Manchow / Sweet Corn Soup',
-    category: 'chinese',
-    price: 100,
-    isVeg: true,
-    variants: [
-      { name: 'Veg Hot & Sour', price: 100 },
-      { name: 'Non-Veg Hot & Sour', price: 150 },
-      { name: 'Veg Sweet Corn', price: 100 },
-      { name: 'Non-Veg Sweet Corn', price: 150 },
-      { name: 'Veg Manchow (with Fried Noodles)', price: 100 },
-      { name: 'Non-Veg Manchow', price: 150 },
-      { name: 'Veg Talumein Soup', price: 100 },
-      { name: 'Non-Veg Talumein Soup', price: 150 }
+    "rating": 4.7,
+    "reviewsCount": 890,
+    "description": "Golden deep-fried momos with crispy shell and piping hot juicy core.",
+    "image": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Classic Fried"
     ],
-    rating: 4.7,
-    reviewsCount: 890,
-    description: 'Steaming hot comfort soup prepared fresh with chopped vegetables, ginger, garlic and crunchy toppings.',
-    image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80',
-    tags: ['Steaming Hot'],
-    spiceLevel: 'Medium'
-  },
-
-  // ================= TIKKA, CHAAPS & TANDOORI SNACKS =================
-  {
-    id: 'snack-paneer-tikka',
-    name: 'Paneer Tikka',
-    category: 'tandoori_snacks',
-    price: 300,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1450,
-    description: 'Generous cubes of fresh paneer marinated in spicy yoghurt, hung curd and roasted in clay oven with capsicum and onions.',
-    image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Tandoori Flame', 'Bestseller'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'snack-paneer-malai-tikka',
-    name: 'Paneer Malai Tikka',
-    category: 'tandoori_snacks',
-    price: 360,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 980,
-    description: 'Mild, melt-in-mouth paneer cubes soaked in rich cashew nut paste, cheese and fresh dairy cream.',
-    image: 'https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rich Malai'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'snack-paneer-fingers',
-    name: 'Paneer Fingers',
-    category: 'tandoori_snacks',
-    price: 200,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 810,
-    description: 'Crisp crumbed fresh cottage cheese batons served with cocktail dip.',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
-    tags: ['Crispy Finger Food'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'snack-mushroom-duplex',
-    name: 'Mushroom Duplex',
-    category: 'tandoori_snacks',
-    price: 200,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1220,
-    description: 'Plump button mushrooms stuffed with spiced cheese & spinach, batter-fried until crispy golden. Sector 34 legendary snack!',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Stuffed Mushroom', 'Must Try'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'snack-crispy-corns',
-    name: 'Crispy Corns',
-    category: 'tandoori_snacks',
-    price: 200,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 670,
-    description: 'Crunchy sweet corn kernels tossed with lemon, black salt, chat masala and spring onions.',
-    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80',
-    tags: ['Crunchy Corn'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'snack-french-fries',
-    name: 'French Fries (Salted / Peri Peri)',
-    category: 'tandoori_snacks',
-    price: 120,
-    isVeg: true,
-    variants: [
-      { name: 'Salted Fries', price: 120 },
-      { name: 'Peri Peri Fries', price: 150 }
+    "id": "momo-platter",
+    "name": "Chaps Grand Momo Platter (8 Pcs)",
+    "category": "momos",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Paneer Platter",
+        "price": 270
+      },
+      {
+        "name": "Veg Platter",
+        "price": 230
+      },
+      {
+        "name": "Non-Veg Chicken Platter",
+        "price": 270
+      }
     ],
-    rating: 4.6,
-    reviewsCount: 1420,
-    description: 'Crispy golden potato fries seasoned to taste.',
-    image: 'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80',
-    tags: ['Classic Fries'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'snack-malai-soya-chaap',
-    name: 'Malai Soya Chaap',
-    category: 'tandoori_snacks',
-    price: 150,
-    isVeg: true,
-    variants: [
-      { name: 'Half (4 pcs)', price: 150 },
-      { name: 'Full (8 pcs)', price: 270 }
+    "isBestseller": true,
+    "rating": 5,
+    "reviewsCount": 1980,
+    "description": "The ultimate sampler: 2 Steamed + 2 Kurkure + 2 Malai Tandoori + 2 Charred Tandoori Momos.",
+    "image": "https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "4 Flavours in 1",
+      "Crowd Favorite"
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 2100,
-    description: 'Juicy soya chaap marinated in fresh cream, butter, roasted cardamom and baked in tandoor.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Creamy Chaap', 'Tricity Top Seller'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'snack-afghani-soya-chaap',
-    name: 'Afghani Soya Chaap',
-    category: 'tandoori_snacks',
-    price: 150,
-    isVeg: true,
-    variants: [
-      { name: 'Half (4 pcs)', price: 150 },
-      { name: 'Full (8 pcs)', price: 270 }
+    "id": "bread-cheese-naan",
+    "name": "Cheese Naan With Gravy",
+    "category": "tandoori_bread",
+    "price": 220,
+    "isVeg": true,
+    "isBestseller": true,
+    "hasVideo": true,
+    "videoUrl": "/videos/hero_video.webm",
+    "rating": 5,
+    "reviewsCount": 3840,
+    "description": "Chandigarh’s most famous late-night obsession! Clay-oven tandoori naan stuffed with molten mozzarella & amul cheese, served with rich Makhani gravy.",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Cheese Pull",
+      "Chandigarh Famous",
+      "Legendary"
     ],
-    rating: 4.8,
-    reviewsCount: 1100,
-    description: 'Tandoor roasted soya chaap infused with black pepper and creamy Afghani dip.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Afghani Soya'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'snack-masala-soya-chaap',
-    name: 'Masala Soya Chaap',
-    category: 'tandoori_snacks',
-    price: 150,
-    isVeg: true,
-    variants: [
-      { name: 'Half', price: 150 },
-      { name: 'Full', price: 270 }
+    "id": "bread-chicken-naan",
+    "name": "Chicken Naan With Gravy",
+    "category": "tandoori_bread",
+    "price": 280,
+    "isVeg": false,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1480,
+    "description": "Fluffy tandoori naan stuffed with spiced minced chicken keema and melting herbs, paired with thick spicy chicken gravy.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Hearty Keema",
+      "Student Favorite"
     ],
-    rating: 4.8,
-    reviewsCount: 940,
-    description: 'Spicy tandoori red masala marinated soya chaap with charred edges.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Spicy Chaap'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'snack-achari-soya-chaap',
-    name: 'Achari Soya Chaap',
-    category: 'tandoori_snacks',
-    price: 150,
-    isVeg: true,
-    variants: [
-      { name: 'Half', price: 150 },
-      { name: 'Full', price: 270 }
+    "id": "bread-onion-naan",
+    "name": "Onion Naan With Gravy",
+    "category": "tandoori_bread",
+    "price": 220,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 560,
+    "description": "Stuffed with spiced chopped onions and coriander, baked crisp and served with rich Makhani gravy.",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Stuffed Naan"
     ],
-    rating: 4.7,
-    reviewsCount: 710,
-    description: 'Tangy Punjabi pickle spices infused into tender soya chaap.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Pickle Masala'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'snack-tandoori-chicken',
-    name: 'Tandoori Chicken',
-    category: 'tandoori_snacks',
-    price: 200,
-    isVeg: false,
-    variants: [
-      { name: 'Half (4 pcs)', price: 200 },
-      { name: 'Full (8 pcs)', price: 350 }
+    "id": "bread-garlic-naan",
+    "name": "Garlic Naan",
+    "category": "tandoori_bread",
+    "price": 80,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1890,
+    "description": "Fluffy clay-oven bread loaded with roasted garlic bits and fresh coriander, brushed with butter.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/4958e5e5-6ccb-4c71-a0e1-d8591a4ae170/Goeld-Garlic-Naan.jpeg",
+    "tags": [
+      "Fresh Clay Oven"
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 2540,
-    description: 'Traditional charcoal-grilled chicken marinated with mustard oil, Kashmiri degi mirch and roasted gram flour.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Authentic Charcoal Grill', 'Bestseller'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'snack-chicken-tikka',
-    name: 'Chicken Tikka',
-    category: 'tandoori_snacks',
-    price: 320,
-    isVeg: false,
-    rating: 4.9,
-    reviewsCount: 1680,
-    description: 'Boneless tender chicken morsels roasted on skewers with spicy tandoori marinade.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Boneless Tikka'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'snack-chicken-malai-tikka',
-    name: 'Chicken Malai Tikka',
-    category: 'tandoori_snacks',
-    price: 380,
-    isVeg: false,
-    rating: 4.9,
-    reviewsCount: 1420,
-    description: 'Boneless chicken marinated in cashew cream, white pepper, grated cheese and butter.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rich Malai Chicken'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'snack-afghani-chicken',
-    name: 'Afghani Chicken',
-    category: 'tandoori_snacks',
-    price: 250,
-    isVeg: false,
-    variants: [
-      { name: 'Half', price: 250 },
-      { name: 'Full', price: 430 }
+    "id": "bread-butter-naan",
+    "name": "Butter Naan",
+    "category": "tandoori_bread",
+    "price": 60,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1450,
+    "description": "Soft layered tandoori naan dripping with pure Amul butter.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Classic Naan"
     ],
-    rating: 4.8,
-    reviewsCount: 1100,
-    description: 'Chicken roasted in clay tandoor and tossed in cream and cracked pepper sauce.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Afghani Roasted'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Mild"
   },
-
-  // ================= NORTH INDIAN CURRIES =================
   {
-    id: 'curry-butter-chicken',
-    name: 'Butter Chicken (Boneless / Bone)',
-    category: 'curries',
-    price: 400,
-    isVeg: false,
-    variants: [
-      { name: 'Boneless Half', price: 400 },
-      { name: 'Boneless Full', price: 650 },
-      { name: 'With Bone Half', price: 350 },
-      { name: 'With Bone Full', price: 620 }
+    "id": "bread-plain-naan",
+    "name": "Plain Naan",
+    "category": "tandoori_bread",
+    "price": 50,
+    "isVeg": true,
+    "rating": 4.6,
+    "reviewsCount": 420,
+    "description": "Classic clay oven baked leavened bread.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Tandoori Bread"
     ],
-    isBestseller: true,
-    hasVideo: true,
-    videoUrl: '/videos/biryani.webm',
-    rating: 5.0,
-    reviewsCount: 3820,
-    description: 'Tender tandoor-roasted chicken steeped in a velvety tomato makhani sauce infused with real butter and dried fenugreek leaves.',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rich Butter Gravy', 'World Class', 'Must Try'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'curry-dal-makhani',
-    name: 'Dal Makhani',
-    category: 'curries',
-    price: 220,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 2840,
-    description: 'Black lentils slow cooked overnight on charcoal embers with fresh churned butter and mild spices. Silky smooth texture.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['30-Year Heritage', 'Overnight Cooked'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'curry-paneer-tikka-butter-masala',
-    name: 'Paneer Tikka Butter Masala',
-    category: 'curries',
-    price: 400,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1980,
-    description: 'Char-grilled cottage cheese cubes cooked in a royal butter masala gravy with capsicum and toasted kasoori methi.',
-    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80',
-    tags: ['Royal North Indian', 'Bestseller'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-kadhai-paneer',
-    name: 'Kadhai Paneer',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1350,
-    description: 'Fresh paneer tossed with cracked coriander, whole red chillies and crisp bell peppers in an iron wok.',
-    image: 'https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80',
-    tags: ['Spicy & Tangy'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'curry-shahi-paneer',
-    name: 'Shahi Paneer',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1120,
-    description: 'Mughlai style velvety cashew cream gravy with tender paneer and delicate cardamom aroma.',
-    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
-    tags: ['Sweet & Mild', 'Kids Favourite'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'curry-paneer-do-pyaza',
-    name: 'Paneer Do Pyaza',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 680,
-    description: 'Cottage cheese simmered in rich gravy with double the amount of crunchy sautéed onions.',
-    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chunky Onion'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-masala-paneer',
-    name: 'Masala Paneer',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 540,
-    description: 'Spiced tomato-onion gravy loaded with fresh malai paneer cubes.',
-    image: 'https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80',
-    tags: ['Punjabi Gravy'],
-    spiceLevel: 'Spicy'
-  },
-  {
-    id: 'curry-paneer-makhani',
-    name: 'Paneer Makhani',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 910,
-    description: 'Fresh paneer cubes in smooth buttery tomato makhani sauce.',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80',
-    tags: ['Buttery Gravy'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'curry-paneer-bhurji',
-    name: 'Paneer Bhurji',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 820,
-    description: 'Scrambled cottage cheese stir fried with onions, tomatoes and green chillies.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Scrambled Paneer'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-mattar-paneer',
-    name: 'Mattar Paneer',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 640,
-    description: 'Tender green peas and soft paneer cubes in North Indian homestyle gravy.',
-    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
-    tags: ['Peas & Paneer'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-cheese-tomato',
-    name: 'Cheese Tomato',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1390,
-    description: 'Iconic Chandigarh speciality! Tangy thick tomato gravy packed with melting cheese and cream.',
-    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80',
-    tags: ['Cheese Tomato Special', 'Chandigarh Cult'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-mushroom-masala',
-    name: 'Mushroom Masala',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 970,
-    description: 'Juicy button mushrooms simmered in thick onion-tomato gravy with roasted spices.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Mushroom Special'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-mushroom-makhani',
-    name: 'Mushroom Makhani',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 520,
-    description: 'Button mushrooms cooked in rich buttery makhani sauce.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Creamy Mushroom'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'curry-mushroom-mattar',
-    name: 'Mushroom Mattar',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 460,
-    description: 'Fresh mushrooms and sweet peas in spiced gravy.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Mushrooms & Peas'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-mushroom-do-pyaza',
-    name: 'Mushroom Do Pyaza',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 490,
-    description: 'Mushrooms cooked with diced onions in semi-dry masala.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Onion Mushroom'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-malai-kofta',
-    name: 'Malai Kofta',
-    category: 'curries',
-    price: 380,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 880,
-    description: 'Delicate paneer and potato dumplings stuffed with dry fruits in a rich cashew gravy.',
-    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
-    tags: ['Royal Kofta'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'curry-chana-masala',
-    name: 'Chana Masala',
-    category: 'curries',
-    price: 330,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 920,
-    description: 'Tender chickpeas cooked in traditional Punjabi spices and amchoor.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Punjabi Chana'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-chana-pindi',
-    name: 'Chana Pindi',
-    category: 'curries',
-    price: 300,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 760,
-    description: 'Authentic dark dry spiced chickpeas cooked with tea liquor and anardana.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Pindi Style'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-palak-paneer',
-    name: 'Palak Paneer',
-    category: 'curries',
-    price: 350,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 650,
-    description: 'Blanched spinach puree tempered with garlic, cumin and soft paneer cubes.',
-    image: 'https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80',
-    tags: ['Fresh Spinach'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'curry-mix-veg',
-    name: 'Mix Vegetable',
-    category: 'curries',
-    price: 250,
-    isVeg: true,
-    rating: 4.6,
-    reviewsCount: 540,
-    description: 'Seasonal cauliflower, carrots, beans and peas tossed in dry roasted masala.',
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80',
-    tags: ['Homestyle Veg'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-dum-aloo',
-    name: 'Dum Aloo',
-    category: 'curries',
-    price: 350,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 480,
-    description: 'Baby potatoes slow cooked on dum in rich yoghurt and fennel seed gravy.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Dum Cooked'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-dal-fry',
-    name: 'Dal Fry / Yellow Dal',
-    category: 'curries',
-    price: 220,
-    isVeg: true,
-    variants: [
-      { name: 'Dal Fry', price: 220 },
-      { name: 'Yellow Dal Tadka', price: 220 }
+    "id": "bread-butter-lachha",
+    "name": "Butter Lachha Parantha",
+    "category": "tandoori_bread",
+    "price": 50,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 780,
+    "description": "Multi-layered crispy flaky wheat parantha made in the tandoor with golden butter.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Multi Layer"
     ],
-    rating: 4.8,
-    reviewsCount: 860,
-    description: 'Yellow lentils tempered with ghee, cumin seeds, garlic, onions and tomatoes.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Ghee Tadka'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'curry-soya-chaap-kadahi',
-    name: 'Kadahi Soya Chaap',
-    category: 'curries',
-    price: 200,
-    isVeg: true,
-    variants: [
-      { name: 'Half', price: 200 },
-      { name: 'Full', price: 380 }
+    "id": "bread-garlic-parantha",
+    "name": "Garlic Parantha",
+    "category": "tandoori_bread",
+    "price": 80,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 410,
+    "description": "Flaky layered wheat bread coated with chopped garlic and butter.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Layered Parantha"
     ],
-    rating: 4.8,
-    reviewsCount: 920,
-    description: 'Tender marinated soya chunks roasted and cooked in spicy kadhai gravy with chunky onions.',
-    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80',
-    tags: ['Soya Kadahi'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'curry-soya-chaap-shahi',
-    name: 'Shahi Soya Chaap',
-    category: 'curries',
-    price: 200,
-    isVeg: true,
-    variants: [
-      { name: 'Half', price: 200 },
-      { name: 'Full', price: 380 }
+    "id": "bread-mirchi-parantha",
+    "name": "Mirchi Parantha",
+    "category": "tandoori_bread",
+    "price": 80,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 380,
+    "description": "Spicy layered parantha studded with green chillies and roasted spices.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Spicy Parantha"
     ],
-    rating: 4.7,
-    reviewsCount: 680,
-    description: 'Soya chaap cooked in royal creamy cashew gravy with sweet notes.',
-    image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80',
-    tags: ['Creamy Shahi'],
-    spiceLevel: 'Mild'
+    "spiceLevel": "Spicy"
   },
   {
-    id: 'curry-soya-chaap-butter-masala',
-    name: 'Chaap Tikka Butter Masala',
-    category: 'curries',
-    price: 200,
-    isVeg: true,
-    variants: [
-      { name: 'Half', price: 200 },
-      { name: 'Full', price: 380 }
+    "id": "bread-missi-roti",
+    "name": "Missi Roti",
+    "category": "tandoori_bread",
+    "price": 60,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 650,
+    "description": "Traditional spiced gram flour (besan) and wheat roti with kasoori methi.",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Traditional Punjabi"
     ],
-    rating: 4.8,
-    reviewsCount: 840,
-    description: 'Tandoori roasted chaap in rich butter tomato gravy.',
-    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chaap Butter Masala'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'curry-soya-chaap-tawa',
-    name: 'Tawa Chaap',
-    category: 'curries',
-    price: 200,
-    isVeg: true,
-    variants: [
-      { name: 'Half', price: 200 },
-      { name: 'Full', price: 380 }
+    "id": "bread-tandoori-butter-roti",
+    "name": "Tandoori Butter Roti",
+    "category": "tandoori_bread",
+    "price": 25,
+    "isVeg": true,
+    "rating": 4.9,
+    "reviewsCount": 3100,
+    "description": "Piping hot whole wheat roti freshly baked in the clay tandoor with Amul butter.",
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Clay Oven Roti",
+      "₹25 Only"
     ],
-    rating: 4.8,
-    reviewsCount: 710,
-    description: 'Spicy street style tawa tossed soya chaap in semi-dry masala.',
-    image: 'https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80',
-    tags: ['Tawa Masala'],
-    spiceLevel: 'Spicy'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'curry-chicken-gravies',
-    name: 'Masala Chicken / Tawa / Kadahi / Ghar Ka Chicken',
-    category: 'curries',
-    price: 350,
-    isVeg: false,
-    variants: [
-      { name: 'Masala Chicken Half', price: 350 },
-      { name: 'Masala Chicken Full', price: 620 },
-      { name: 'Tawa Chicken Half', price: 350 },
-      { name: 'Tawa Chicken Full', price: 620 },
-      { name: 'Kadahi Chicken Half', price: 350 },
-      { name: 'Kadahi Chicken Full', price: 620 },
-      { name: 'Ghar Ka Chicken Half', price: 350 },
-      { name: 'Ghar Ka Chicken Full', price: 620 },
-      { name: 'Chicken Curry Half', price: 350 },
-      { name: 'Chicken Curry Full', price: 620 }
+    "id": "bread-tandoori-roti",
+    "name": "Tandoori Roti (Plain)",
+    "category": "tandoori_bread",
+    "price": 20,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 2100,
+    "description": "Crispy plain whole wheat tandoori roti.",
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Healthy Whole Wheat",
+      "₹20 Only"
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 2450,
-    description: 'Authentic North Indian chicken curries cooked with whole spices, browned onions and fresh ginger-garlic.',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80',
-    tags: ['Punjabi Gravy', 'Must Try'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'curry-chicken-tikka-butter-masala',
-    name: 'Chicken Tikka Butter Masala',
-    category: 'curries',
-    price: 400,
-    isVeg: false,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1670,
-    description: 'Charcoal roasted boneless chicken tikka cooked in rich buttery makhani gravy.',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80',
-    tags: ['Boneless Tikka Butter Masala'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'curry-chicken-biryani',
-    name: 'Chicken Biryani',
-    category: 'curries',
-    price: 280,
-    isVeg: false,
-    rating: 4.8,
-    reviewsCount: 1250,
-    description: 'Fragrant basmati rice layered with spiced chicken, mint, saffron and caramelized onions.',
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Dum Biryani'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-veg-biryani',
-    name: 'Veg Biryani',
-    category: 'curries',
-    price: 250,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 880,
-    description: 'Aromatic basmati rice cooked on dum with mixed vegetables, paneer and whole spices.',
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
-    tags: ['Veg Dum Biryani'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-egg-curry',
-    name: 'Egg Curry',
-    category: 'curries',
-    price: 300,
-    isVeg: false,
-    rating: 4.7,
-    reviewsCount: 520,
-    description: 'Boiled and shallow-fried eggs simmered in rich spicy Punjabi curry.',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80',
-    tags: ['Egg Special'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'curry-rice-sides',
-    name: 'Zeera Rice / Plain Steamed Rice / Raita',
-    category: 'curries',
-    price: 150,
-    isVeg: true,
-    variants: [
-      { name: 'Plain Rice', price: 150 },
-      { name: 'Zeera Rice', price: 180 },
-      { name: 'Boondi / Veg Raita', price: 100 }
+    "id": "bread-rumali-roti",
+    "name": "Rumali Roti",
+    "category": "tandoori_bread",
+    "price": 20,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1540,
+    "description": "Thin handkerchief soft bread, perfect with gravies and chaaps.",
+    "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Paper Thin",
+      "₹20 Only"
     ],
-    rating: 4.7,
-    reviewsCount: 940,
-    description: 'Long grain fluffy basmati rice and refreshing spiced chilled curd.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Sides & Rice'],
-    spiceLevel: 'Mild'
-  },
-
-  // ================= PLATTERS & THALIS =================
-  {
-    id: 'platter-duplex',
-    name: 'Duplex Platter (17 Pcs Feast)',
-    category: 'platters',
-    price: 260,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1840,
-    description: 'Huge sharing combo: 6 pcs Mushroom Duplex + 6 pcs Paneer Fingers + 5 pcs Crispy Spring Rolls with cocktail dips.',
-    image: 'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80',
-    tags: ['Family Feast', 'Best Value Snack'],
-    spiceLevel: 'Medium'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'platter-tandoori',
-    name: 'Tandoori Platter',
-    category: 'platters',
-    price: 280,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1620,
-    description: 'Malai Chaap + Masala Chaap + Paneer Tikka + 2 Mushroom Duplex + 2 Paneer Fingers.',
-    image: 'https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80',
-    tags: ['Tandoori Sampler'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'platter-chinese',
-    name: 'Chinese Grand Platter',
-    category: 'platters',
-    price: 250,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.8,
-    reviewsCount: 1540,
-    description: 'Veg Chowmein Noodles + 2 pcs Paneer Chilli Dry + 2 pcs Manchurian Gravy + 2 Veg Steamed Momos + 1 Cigar Roll.',
-    image: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
-    tags: ['All In One Chinese', 'Bestseller'],
-    spiceLevel: 'Medium'
-  },
-  {
-    id: 'thali-simple-veg',
-    name: 'Simple Veg Thali',
-    category: 'platters',
-    price: 140,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 820,
-    description: 'Pocket friendly thali: Dal, seasonal sabzi, rice, 2 rotis and salad.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['₹140 Super Saver'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'thali-veg-regular',
-    name: 'Veg Thali',
-    category: 'platters',
-    price: 180,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 940,
-    description: 'Dal Makhani, Paneer dish, Mix Vegetable, Steamed Rice, 2 Butter Rotis and Salad.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Wholesome Meal'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'thali-veg-raita',
-    name: 'Special Veg Thali With Raita',
-    category: 'platters',
-    price: 200,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1210,
-    description: 'Dal Makhani, Shahi Paneer, Mix Veg, Jeera Rice, 2 Butter Rotis, Pickle, Salad and Boondi Raita.',
-    image: 'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80',
-    tags: ['Complete Feast'],
-    spiceLevel: 'Mild'
-  },
-  {
-    id: 'thali-non-veg',
-    name: 'Non Veg Thali',
-    category: 'platters',
-    price: 250,
-    isVeg: false,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1380,
-    description: 'Butter Chicken Gravy, Dal Makhani, Jeera Rice, 2 Butter Rotis, Salad, Pickle and Raita.',
-    image: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chicken Feast Box'],
-    spiceLevel: 'Medium'
-  },
-
-  // ================= BOBA TEA, SHAKES & BEVERAGES =================
-  {
-    id: 'drink-mango-boba',
-    name: 'Mango Boba Tea with Cheese Foam',
-    category: 'beverages',
-    price: 180,
-    isVeg: true,
-    isBestseller: true,
-    hasVideo: true,
-    videoUrl: '/videos/hero_video.webm',
-    rating: 4.9,
-    reviewsCount: 1420,
-    size: '500 ml Cup',
-    description: 'Fresh milk-based Alphonso mango tea infused with chewy tapioca boba pearls and crowned with velvety salted cheese foam.',
-    image: 'https://images.unsplash.com/photo-1558857563-b37fe8466b09?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chewy Boba', 'Cheese Foam Top', 'Trending'],
-    spiceLevel: 'Sweet'
-  },
-  {
-    id: 'drink-choco-signature-boba',
-    name: 'Choco Signature Boba Tea',
-    category: 'beverages',
-    price: 180,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 890,
-    size: '500 ml Cup',
-    description: 'Decadent chocolate milk tea with brown sugar boba pearls and salted cream cheese foam.',
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chocolate Boba'],
-    spiceLevel: 'Sweet'
-  },
-  {
-    id: 'drink-oreo-cloud-boba',
-    name: 'Oreo Cloud Boba Tea',
-    category: 'beverages',
-    price: 180,
-    isVeg: true,
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1120,
-    size: '500 ml Cup',
-    description: 'Rich chocolate cookie milk with brown sugar tapioca pearls, topped with sweet cream cloud foam and crushed Oreo crumble.',
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80',
-    tags: ['Chocolate & Cookie', 'Cheese Foam'],
-    spiceLevel: 'Sweet'
-  },
-  {
-    id: 'drink-blueberry-boba',
-    name: 'Blueberry Boba Tea',
-    category: 'beverages',
-    price: 180,
-    isVeg: true,
-    rating: 4.7,
-    reviewsCount: 640,
-    size: '500 ml Cup',
-    description: 'Refreshing blueberry milk bubble tea topped with cheese foam.',
-    image: 'https://images.unsplash.com/photo-1558857563-b37fe8466b09?auto=format&fit=crop&w=800&q=80',
-    tags: ['Berry Boba'],
-    spiceLevel: 'Sweet'
-  },
-  {
-    id: 'drink-popping-boba',
-    name: 'Popping Boba (Peach / Strawberry)',
-    category: 'beverages',
-    price: 130,
-    isVeg: true,
-    variants: [
-      { name: 'Peach (Small 350ml)', price: 130 },
-      { name: 'Peach (Large 500ml)', price: 160 },
-      { name: 'Strawberry (Small 350ml)', price: 130 },
-      { name: 'Strawberry (Large 500ml)', price: 160 }
+    "id": "chinese-honey-chilli-potato",
+    "name": "Honey Chilli Potato",
+    "category": "chinese",
+    "price": 280,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 2820,
+    "description": "Crisp hand-cut potato fingers tossed in honey, chilli sauce, spring greens and toasted sesame seeds. Chandigarh favourite!",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Super Crisp",
+      "Legendary Star"
     ],
-    rating: 4.8,
-    reviewsCount: 890,
-    description: 'Refreshing sparkling fruit soda filled with juicy popping pearls that burst with sweet fruit syrup in every sip!',
-    image: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80',
-    tags: ['Bursting Pearls', 'Soda Based'],
-    spiceLevel: 'Sweet'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'drink-cold-coffee',
-    name: 'Cold Coffee (Classic / Hazelnut / Caramel / Mocha)',
-    category: 'beverages',
-    price: 120,
-    isVeg: true,
-    variants: [
-      { name: 'Classic (Small 350ml)', price: 120 },
-      { name: 'Classic (Large 500ml)', price: 160 },
-      { name: 'Hazelnut (Small 350ml)', price: 140 },
-      { name: 'Hazelnut (Large 500ml)', price: 180 },
-      { name: 'Caramel (Small 350ml)', price: 140 },
-      { name: 'Caramel (Large 500ml)', price: 180 },
-      { name: 'Mocha Frappe (Small 350ml)', price: 140 },
-      { name: 'Mocha Frappe (Large 500ml)', price: 180 }
+    "id": "chinese-honey-chilli-cauliflower",
+    "name": "Honey Chilli Cauliflower",
+    "category": "chinese",
+    "price": 280,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1890,
+    "description": "Batter-fried crunchy cauliflower florets glazed in spicy-sweet garlic sauce. The cult snack that Sector 34 swears by.",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chaplin Legacy",
+      "Crispy Delight"
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 2240,
-    description: 'Slow-brewed dark espresso blended with creamy chilled milk and roasted hazelnut syrup. The perfect fast-food companion.',
-    image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rich Aroma', 'Best Coffee in Sec 34'],
-    spiceLevel: 'Sweet'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'drink-thick-shakes',
-    name: 'Thick Shakes (Oreo / Chocolate / Strawberry / Blueberry / Butterscotch)',
-    category: 'beverages',
-    price: 120,
-    isVeg: true,
-    variants: [
-      { name: 'Chocolate Shake (Small)', price: 120 },
-      { name: 'Chocolate Shake (Large)', price: 180 },
-      { name: 'Oreo Shake (Small)', price: 140 },
-      { name: 'Oreo Shake (Large)', price: 180 },
-      { name: 'Strawberry Shake (Small)', price: 120 },
-      { name: 'Strawberry Shake (Large)', price: 180 },
-      { name: 'Blueberry Shake (Small)', price: 140 },
-      { name: 'Blueberry Shake (Large)', price: 180 },
-      { name: 'Butterscotch Shake (Small)', price: 120 },
-      { name: 'Butterscotch Shake (Large)', price: 180 }
+    "id": "chinese-chaplin-special-noodles",
+    "name": "Chaplin Special Noodles",
+    "category": "chinese",
+    "price": 250,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Special",
+        "price": 250
+      },
+      {
+        "name": "Non-Veg Special",
+        "price": 300
+      }
     ],
-    isBestseller: true,
-    rating: 4.9,
-    reviewsCount: 1890,
-    description: 'Super thick dairy milkshakes made with ice cream and real chocolate/fruit purees.',
-    image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80',
-    tags: ['Thick Milkshakes'],
-    spiceLevel: 'Sweet'
-  },
-  {
-    id: 'drink-cold-chocolate',
-    name: 'Cold Chocolate',
-    category: 'beverages',
-    price: 120,
-    isVeg: true,
-    variants: [
-      { name: 'Cold Chocolate', price: 120 },
-      { name: 'With Cheese Foam', price: 140 }
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 2210,
+    "description": "Our house specialty noodles loaded with shredded vegetables, paneer chunks, secret seasoning and aromatic wok breath.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/cacca599-55cf-4cb2-b24d-9395043a9d1d/Yu-Veg-Hakka-Noodles-Chowmein-Style.jpg",
+    "tags": [
+      "Original Recipe",
+      "House Special"
     ],
-    rating: 4.8,
-    reviewsCount: 740,
-    description: 'Velvety chilled cocoa milk, optional topping of salted cheese foam.',
-    image: 'https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=800&q=80',
-    tags: ['Rich Cocoa'],
-    spiceLevel: 'Sweet'
+    "spiceLevel": "Medium"
   },
   {
-    id: 'drink-mint-mojito',
-    name: 'Mint Mojito Mocktail',
-    category: 'beverages',
-    price: 100,
-    isVeg: true,
-    rating: 4.8,
-    reviewsCount: 1440,
-    description: 'Fresh garden spearmint leaves muddled with lime juice, raw cane sugar and chilled bubbly soda.',
-    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80',
-    tags: ['Zesty Refreshment', 'Mocktail'],
-    spiceLevel: 'Sweet'
-  },
-  {
-    id: 'drink-mojitos-coolers',
-    name: 'Watermelon / Green Apple / Blue Ocean / Kala Khatta',
-    category: 'beverages',
-    price: 100,
-    isVeg: true,
-    variants: [
-      { name: 'Watermelon Mojito', price: 100 },
-      { name: 'Green Apple Mojito', price: 100 },
-      { name: 'Blue Ocean Soda', price: 100 },
-      { name: 'Kala Khatta Soda', price: 100 }
+    "id": "chinese-veg-chowmein",
+    "name": "Chowmein (Street Style)",
+    "category": "chinese",
+    "price": 170,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Chowmein",
+        "price": 170
+      },
+      {
+        "name": "Egg Chowmein",
+        "price": 200
+      },
+      {
+        "name": "Non-Veg Chicken",
+        "price": 250
+      }
     ],
-    rating: 4.7,
-    reviewsCount: 980,
-    description: 'Crisp fruit flavoured bubbly sodas served ice cold with lemon slices.',
-    image: 'https://images.unsplash.com/photo-1560512823-829485b8bf24?auto=format&fit=crop&w=800&q=80',
-    tags: ['Summer Coolers'],
-    spiceLevel: 'Sweet'
-  },
-  {
-    id: 'drink-sodas-ice-teas',
-    name: 'Lemon Soda / Masala Soda / Peach & Lemon Ice Tea',
-    category: 'beverages',
-    price: 90,
-    isVeg: true,
-    variants: [
-      { name: 'Lemon Soda', price: 90 },
-      { name: 'Masala Soda', price: 90 },
-      { name: 'Peach Ice Tea', price: 90 },
-      { name: 'Lemon Ice Tea', price: 90 }
+    "rating": 4.7,
+    "reviewsCount": 1840,
+    "description": "Thin street style wok-fried noodles with julienned cabbage, carrots and fragrant seasonings.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Street Style",
+      "Best Value"
     ],
-    rating: 4.8,
-    reviewsCount: 1120,
-    description: 'Refreshing fizzy coolers and brewed chilled ice teas.',
-    image: 'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80',
-    tags: ['Only ₹90'],
-    spiceLevel: 'Sweet'
+    "spiceLevel": "Mild"
   },
   {
-    id: 'drink-fruit-beer',
-    name: 'Chilled Fruit Beer',
-    category: 'beverages',
-    price: 80,
-    isVeg: true,
-    isBestseller: true,
-    rating: 5.0,
-    reviewsCount: 2680,
-    description: 'Chandigarh street food legend! Frothy non-alcoholic fruit beer served ice cold with sweet malty undertones.',
-    image: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?auto=format&fit=crop&w=800&q=80',
-    tags: ['Zero Alcohol', 'Chandigarh Tradition', 'Only ₹80'],
-    spiceLevel: 'Sweet'
+    "id": "chinese-garlic-chowmein",
+    "name": "Garlic Chowmein",
+    "category": "chinese",
+    "price": 200,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Garlic",
+        "price": 200
+      },
+      {
+        "name": "Non-Veg Chicken",
+        "price": 270
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 890,
+    "description": "Wok tossed noodles infused with burnt golden garlic and fiery chillies.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Garlic Burst"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-paneer-chowmein",
+    "name": "Paneer Chowmein",
+    "category": "chinese",
+    "price": 280,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 970,
+    "description": "Noodles tossed with fried paneer fingers, bell peppers and soya sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Paneer Loaded"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-hakka-noodles",
+    "name": "Hakka Noodles",
+    "category": "chinese",
+    "price": 250,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Hakka",
+        "price": 250
+      },
+      {
+        "name": "Non-Veg Hakka",
+        "price": 300
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 1280,
+    "description": "Authentic Hakka noodles tossed with bell peppers, spring onions and light soy.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/cacca599-55cf-4cb2-b24d-9395043a9d1d/Yu-Veg-Hakka-Noodles-Chowmein-Style.jpg",
+    "tags": [
+      "Hakka Classic"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "chinese-fried-rice",
+    "name": "Fried Rice",
+    "category": "chinese",
+    "price": 240,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Fried Rice",
+        "price": 240
+      },
+      {
+        "name": "Egg Fried Rice",
+        "price": 260
+      },
+      {
+        "name": "Paneer Fried Rice",
+        "price": 280
+      },
+      {
+        "name": "Non-Veg Chicken",
+        "price": 270
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 1100,
+    "description": "Long-grain basmati rice tossed with garden veggies and light soy in a flaming wok.",
+    "image": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Wok Fried Rice"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "chinese-chilly-garlic-rice",
+    "name": "Chilly Garlic Rice",
+    "category": "chinese",
+    "price": 250,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Chilly Garlic",
+        "price": 250
+      },
+      {
+        "name": "Non-Veg Chicken",
+        "price": 280
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 940,
+    "description": "Spicy rice tossed with chopped red chillies and roasted garlic.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Spicy Garlic"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "chinese-chaplin-special-rice",
+    "name": "Chaplin Special Rice",
+    "category": "chinese",
+    "price": 270,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Special Rice",
+        "price": 270
+      },
+      {
+        "name": "Non-Veg Special Rice",
+        "price": 300
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "description": "Chef signature fried rice loaded with paneer/chicken, exotic vegetables and secret masala.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "House Special"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-chilli-chicken",
+    "name": "Chilli Chicken (Boneless / Bone)",
+    "category": "chinese",
+    "price": 350,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Boneless Half",
+        "price": 350
+      },
+      {
+        "name": "Boneless Full",
+        "price": 600
+      },
+      {
+        "name": "With Bone Half",
+        "price": 350
+      },
+      {
+        "name": "With Bone Full",
+        "price": 600
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1980,
+    "description": "Crispy fried chicken tossed with diced green peppers, onions, dark soy and Chinese five-spice chilli oil.",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Juicy & Spicy",
+      "Best with Fried Rice"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "chinese-chicken-manchurian",
+    "name": "Chicken Manchurian",
+    "category": "chinese",
+    "price": 350,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Half (4 pcs)",
+        "price": 350
+      },
+      {
+        "name": "Full (8 pcs)",
+        "price": 600
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 960,
+    "description": "Tender chicken balls cooked in rich brown garlic coriander Manchurian sauce.",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Manchurian Sauce"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-chicken-ginger",
+    "name": "Chicken Ginger",
+    "category": "chinese",
+    "price": 350,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 350
+      },
+      {
+        "name": "Full",
+        "price": 600
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 520,
+    "description": "Succulent chicken tossed with julienned fresh ginger and spring onions in dark sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Ginger Aroma"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-chicken-garlic-sauce",
+    "name": "Chicken Garlic Sauce",
+    "category": "chinese",
+    "price": 350,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 350
+      },
+      {
+        "name": "Full",
+        "price": 600
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 680,
+    "description": "Chicken cooked in spicy red hot garlic sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Hot Garlic"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "chinese-chicken-sweet-sour",
+    "name": "Chicken Sweet & Sour",
+    "category": "chinese",
+    "price": 350,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 350
+      },
+      {
+        "name": "Full",
+        "price": 600
+      }
+    ],
+    "rating": 4.6,
+    "reviewsCount": 420,
+    "description": "Crisp chicken cubes with bell peppers and pineapple chunks in sweet & tangy sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Sweet & Tangy"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "chinese-honey-chilli-chicken",
+    "name": "Honey Chilli Chicken",
+    "category": "chinese",
+    "price": 350,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 350
+      },
+      {
+        "name": "Full",
+        "price": 600
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1450,
+    "description": "Crispy fried boneless chicken bites glazed in honey chilli sauce and sesame.",
+    "image": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Glazed Honey Chilli"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-veg-manchurian",
+    "name": "Veg Manchurian",
+    "category": "chinese",
+    "price": 280,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1320,
+    "description": "Minced vegetable dumplings tossed in garlic, ginger, green chillies and savory coriander soy sauce.",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "All-Time Classic"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-paneer-chili",
+    "name": "Paneer Chili",
+    "category": "chinese",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1610,
+    "description": "Fresh malai paneer cubes wok tossed with crunchy bell peppers, onions and zesty hot garlic sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Standard Malai Paneer"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-paneer-manchurian",
+    "name": "Paneer Manchurian",
+    "category": "chinese",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 710,
+    "description": "Crispy coated paneer cubes tossed in rich Manchurian gravy.",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Paneer Manchurian"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-mushroom-chili",
+    "name": "Mushroom Chili",
+    "category": "chinese",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 840,
+    "description": "Fresh button mushrooms wok tossed with onions, green chillies and dark soya sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Button Mushrooms"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "chinese-paneer-garlic-sauce",
+    "name": "Paneer Garlic Sauce",
+    "category": "chinese",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 490,
+    "description": "Paneer fingers cooked in a spicy pungent garlic sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Garlic Paneer"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "chinese-veg-sweet-sour",
+    "name": "Vegetable Sweet & Sour",
+    "category": "chinese",
+    "price": 300,
+    "isVeg": true,
+    "rating": 4.6,
+    "reviewsCount": 380,
+    "description": "Diced garden vegetables in Chinese sweet and sour sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Sweet & Sour"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "chinese-mix-veg-garlic",
+    "name": "Mix Veg Hot Garlic Sauce",
+    "category": "chinese",
+    "price": 300,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 420,
+    "description": "Fresh crisp vegetables simmered in spicy red hot garlic sauce.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Hot Garlic Veg"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "chinese-chopsuey",
+    "name": "Chopsuey",
+    "category": "chinese",
+    "price": 180,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Chopsuey",
+        "price": 180
+      },
+      {
+        "name": "Chinese Chopsuey",
+        "price": 180
+      },
+      {
+        "name": "American Chopsuey",
+        "price": 270
+      },
+      {
+        "name": "Non-Veg Chopsuey",
+        "price": 250
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 620,
+    "description": "Crispy fried noodles topped with sweet and tangy saucy stir-fried vegetables.",
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Crispy Noodles"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "chinese-spring-roll",
+    "name": "Spring Rolls",
+    "category": "chinese",
+    "price": 160,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Spring Roll",
+        "price": 160
+      },
+      {
+        "name": "Cigar Roll (5 Pcs)",
+        "price": 170
+      },
+      {
+        "name": "Crunchy Spring Roll",
+        "price": 200
+      },
+      {
+        "name": "Paneer Spring Roll",
+        "price": 220
+      },
+      {
+        "name": "Chicken Spring Roll",
+        "price": 220
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.8,
+    "reviewsCount": 1680,
+    "description": "Crispy fried spring rolls stuffed with seasoned noodles and vegetables, served with sweet-chilli dip.",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Crispy Snack"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "chinese-soups",
+    "name": "Hot & Sour / Manchow / Sweet Corn Soup",
+    "category": "chinese",
+    "price": 100,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Veg Hot & Sour",
+        "price": 100
+      },
+      {
+        "name": "Non-Veg Hot & Sour",
+        "price": 150
+      },
+      {
+        "name": "Veg Sweet Corn",
+        "price": 100
+      },
+      {
+        "name": "Non-Veg Sweet Corn",
+        "price": 150
+      },
+      {
+        "name": "Veg Manchow (with Fried Noodles)",
+        "price": 100
+      },
+      {
+        "name": "Non-Veg Manchow",
+        "price": 150
+      },
+      {
+        "name": "Veg Talumein Soup",
+        "price": 100
+      },
+      {
+        "name": "Non-Veg Talumein Soup",
+        "price": 150
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 890,
+    "description": "Steaming hot comfort soup prepared fresh with chopped vegetables, ginger, garlic and crunchy toppings.",
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Steaming Hot"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "snack-paneer-tikka",
+    "name": "Paneer Tikka",
+    "category": "tandoori_snacks",
+    "price": 300,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1450,
+    "description": "Generous cubes of fresh paneer marinated in spicy yoghurt, hung curd and roasted in clay oven with capsicum and onions.",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Tandoori Flame",
+      "Bestseller"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "snack-paneer-malai-tikka",
+    "name": "Paneer Malai Tikka",
+    "category": "tandoori_snacks",
+    "price": 360,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 980,
+    "description": "Mild, melt-in-mouth paneer cubes soaked in rich cashew nut paste, cheese and fresh dairy cream.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Rich Malai"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "snack-paneer-fingers",
+    "name": "Paneer Fingers",
+    "category": "tandoori_snacks",
+    "price": 200,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 810,
+    "description": "Crisp crumbed fresh cottage cheese batons served with cocktail dip.",
+    "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Crispy Finger Food"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "snack-mushroom-duplex",
+    "name": "Mushroom Duplex",
+    "category": "tandoori_snacks",
+    "price": 200,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1220,
+    "description": "Plump button mushrooms stuffed with spiced cheese & spinach, batter-fried until crispy golden. Sector 34 legendary snack!",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Stuffed Mushroom",
+      "Must Try"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "snack-crispy-corns",
+    "name": "Crispy Corns",
+    "category": "tandoori_snacks",
+    "price": 200,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 670,
+    "description": "Crunchy sweet corn kernels tossed with lemon, black salt, chat masala and spring onions.",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Crunchy Corn"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "snack-french-fries",
+    "name": "French Fries (Salted / Peri Peri)",
+    "category": "tandoori_snacks",
+    "price": 120,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Salted Fries",
+        "price": 120
+      },
+      {
+        "name": "Peri Peri Fries",
+        "price": 150
+      }
+    ],
+    "rating": 4.6,
+    "reviewsCount": 1420,
+    "description": "Crispy golden potato fries seasoned to taste.",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Classic Fries"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "snack-malai-soya-chaap",
+    "name": "Malai Soya Chaap",
+    "category": "tandoori_snacks",
+    "price": 150,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half (4 pcs)",
+        "price": 150
+      },
+      {
+        "name": "Full (8 pcs)",
+        "price": 270
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 2100,
+    "description": "Juicy soya chaap marinated in fresh cream, butter, roasted cardamom and baked in tandoor.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Creamy Chaap",
+      "Tricity Top Seller"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "snack-afghani-soya-chaap",
+    "name": "Afghani Soya Chaap",
+    "category": "tandoori_snacks",
+    "price": 150,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half (4 pcs)",
+        "price": 150
+      },
+      {
+        "name": "Full (8 pcs)",
+        "price": 270
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 1100,
+    "description": "Tandoor roasted soya chaap infused with black pepper and creamy Afghani dip.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Afghani Soya"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "snack-masala-soya-chaap",
+    "name": "Masala Soya Chaap",
+    "category": "tandoori_snacks",
+    "price": 150,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 150
+      },
+      {
+        "name": "Full",
+        "price": 270
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 940,
+    "description": "Spicy tandoori red masala marinated soya chaap with charred edges.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Spicy Chaap"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "snack-achari-soya-chaap",
+    "name": "Achari Soya Chaap",
+    "category": "tandoori_snacks",
+    "price": 150,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 150
+      },
+      {
+        "name": "Full",
+        "price": 270
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 710,
+    "description": "Tangy Punjabi pickle spices infused into tender soya chaap.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Pickle Masala"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "snack-tandoori-chicken",
+    "name": "Tandoori Chicken",
+    "category": "tandoori_snacks",
+    "price": 200,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Half (4 pcs)",
+        "price": 200
+      },
+      {
+        "name": "Full (8 pcs)",
+        "price": 350
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 2540,
+    "description": "Traditional charcoal-grilled chicken marinated with mustard oil, Kashmiri degi mirch and roasted gram flour.",
+    "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Authentic Charcoal Grill",
+      "Bestseller"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "snack-chicken-tikka",
+    "name": "Chicken Tikka",
+    "category": "tandoori_snacks",
+    "price": 320,
+    "isVeg": false,
+    "rating": 4.9,
+    "reviewsCount": 1680,
+    "description": "Boneless tender chicken morsels roasted on skewers with spicy tandoori marinade.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Boneless Tikka"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "snack-chicken-malai-tikka",
+    "name": "Chicken Malai Tikka",
+    "category": "tandoori_snacks",
+    "price": 380,
+    "isVeg": false,
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "description": "Boneless chicken marinated in cashew cream, white pepper, grated cheese and butter.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Rich Malai Chicken"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "snack-afghani-chicken",
+    "name": "Afghani Chicken",
+    "category": "tandoori_snacks",
+    "price": 250,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 250
+      },
+      {
+        "name": "Full",
+        "price": 430
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 1100,
+    "description": "Chicken roasted in clay tandoor and tossed in cream and cracked pepper sauce.",
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Afghani Roasted"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-butter-chicken",
+    "name": "Butter Chicken (Boneless / Bone)",
+    "category": "curries",
+    "price": 400,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Boneless Half",
+        "price": 400
+      },
+      {
+        "name": "Boneless Full",
+        "price": 650
+      },
+      {
+        "name": "With Bone Half",
+        "price": 350
+      },
+      {
+        "name": "With Bone Full",
+        "price": 620
+      }
+    ],
+    "isBestseller": true,
+    "hasVideo": true,
+    "videoUrl": "/videos/biryani.webm",
+    "rating": 5,
+    "reviewsCount": 3820,
+    "description": "Tender tandoor-roasted chicken steeped in a velvety tomato makhani sauce infused with real butter and dried fenugreek leaves.",
+    "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Rich Butter Gravy",
+      "World Class",
+      "Must Try"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-dal-makhani",
+    "name": "Dal Makhani",
+    "category": "curries",
+    "price": 220,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 2840,
+    "description": "Black lentils slow cooked overnight on charcoal embers with fresh churned butter and mild spices. Silky smooth texture.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "30-Year Heritage",
+      "Overnight Cooked"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-paneer-tikka-butter-masala",
+    "name": "Paneer Tikka Butter Masala",
+    "category": "curries",
+    "price": 400,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1980,
+    "description": "Char-grilled cottage cheese cubes cooked in a royal butter masala gravy with capsicum and toasted kasoori methi.",
+    "image": "https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Royal North Indian",
+      "Bestseller"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-kadhai-paneer",
+    "name": "Kadhai Paneer",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1350,
+    "description": "Fresh paneer tossed with cracked coriander, whole red chillies and crisp bell peppers in an iron wok.",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Spicy & Tangy"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "curry-shahi-paneer",
+    "name": "Shahi Paneer",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1120,
+    "description": "Mughlai style velvety cashew cream gravy with tender paneer and delicate cardamom aroma.",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Sweet & Mild",
+      "Kids Favourite"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-paneer-do-pyaza",
+    "name": "Paneer Do Pyaza",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 680,
+    "description": "Cottage cheese simmered in rich gravy with double the amount of crunchy sautéed onions.",
+    "image": "https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chunky Onion"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-masala-paneer",
+    "name": "Masala Paneer",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 540,
+    "description": "Spiced tomato-onion gravy loaded with fresh malai paneer cubes.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Punjabi Gravy"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "curry-paneer-makhani",
+    "name": "Paneer Makhani",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 910,
+    "description": "Fresh paneer cubes in smooth buttery tomato makhani sauce.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Buttery Gravy"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-paneer-bhurji",
+    "name": "Paneer Bhurji",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 820,
+    "description": "Scrambled cottage cheese stir fried with onions, tomatoes and green chillies.",
+    "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Scrambled Paneer"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-mattar-paneer",
+    "name": "Mattar Paneer",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 640,
+    "description": "Tender green peas and soft paneer cubes in North Indian homestyle gravy.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Peas & Paneer"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-cheese-tomato",
+    "name": "Cheese Tomato",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1390,
+    "description": "Iconic Chandigarh speciality! Tangy thick tomato gravy packed with melting cheese and cream.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Cheese Tomato Special",
+      "Chandigarh Cult"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-mushroom-masala",
+    "name": "Mushroom Masala",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 970,
+    "description": "Juicy button mushrooms simmered in thick onion-tomato gravy with roasted spices.",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Mushroom Special"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-mushroom-makhani",
+    "name": "Mushroom Makhani",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 520,
+    "description": "Button mushrooms cooked in rich buttery makhani sauce.",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Creamy Mushroom"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-mushroom-mattar",
+    "name": "Mushroom Mattar",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 460,
+    "description": "Fresh mushrooms and sweet peas in spiced gravy.",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Mushrooms & Peas"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-mushroom-do-pyaza",
+    "name": "Mushroom Do Pyaza",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 490,
+    "description": "Mushrooms cooked with diced onions in semi-dry masala.",
+    "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Onion Mushroom"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-malai-kofta",
+    "name": "Malai Kofta",
+    "category": "curries",
+    "price": 380,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 880,
+    "description": "Delicate paneer and potato dumplings stuffed with dry fruits in a rich cashew gravy.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Royal Kofta"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-chana-masala",
+    "name": "Chana Masala",
+    "category": "curries",
+    "price": 330,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 920,
+    "description": "Tender chickpeas cooked in traditional Punjabi spices and amchoor.",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Punjabi Chana"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-chana-pindi",
+    "name": "Chana Pindi",
+    "category": "curries",
+    "price": 300,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 760,
+    "description": "Authentic dark dry spiced chickpeas cooked with tea liquor and anardana.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Pindi Style"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-palak-paneer",
+    "name": "Palak Paneer",
+    "category": "curries",
+    "price": 350,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 650,
+    "description": "Blanched spinach puree tempered with garlic, cumin and soft paneer cubes.",
+    "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Fresh Spinach"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-mix-veg",
+    "name": "Mix Vegetable",
+    "category": "curries",
+    "price": 250,
+    "isVeg": true,
+    "rating": 4.6,
+    "reviewsCount": 540,
+    "description": "Seasonal cauliflower, carrots, beans and peas tossed in dry roasted masala.",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Homestyle Veg"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-dum-aloo",
+    "name": "Dum Aloo",
+    "category": "curries",
+    "price": 350,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 480,
+    "description": "Baby potatoes slow cooked on dum in rich yoghurt and fennel seed gravy.",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Dum Cooked"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-dal-fry",
+    "name": "Dal Fry / Yellow Dal",
+    "category": "curries",
+    "price": 220,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Dal Fry",
+        "price": 220
+      },
+      {
+        "name": "Yellow Dal Tadka",
+        "price": 220
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 860,
+    "description": "Yellow lentils tempered with ghee, cumin seeds, garlic, onions and tomatoes.",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Ghee Tadka"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-soya-chaap-kadahi",
+    "name": "Kadahi Soya Chaap",
+    "category": "curries",
+    "price": 200,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 200
+      },
+      {
+        "name": "Full",
+        "price": 380
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 920,
+    "description": "Tender marinated soya chunks roasted and cooked in spicy kadhai gravy with chunky onions.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/332d4905-3578-48f8-97d6-c9613160dfe3/Blue-Tribe-Foods-Ready-To-Eat-Afghani-Soya-Chaap.jpg",
+    "tags": [
+      "Soya Kadahi"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-soya-chaap-shahi",
+    "name": "Shahi Soya Chaap",
+    "category": "curries",
+    "price": 200,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 200
+      },
+      {
+        "name": "Full",
+        "price": 380
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 680,
+    "description": "Soya chaap cooked in royal creamy cashew gravy with sweet notes.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/332d4905-3578-48f8-97d6-c9613160dfe3/Blue-Tribe-Foods-Ready-To-Eat-Afghani-Soya-Chaap.jpg",
+    "tags": [
+      "Creamy Shahi"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-soya-chaap-butter-masala",
+    "name": "Chaap Tikka Butter Masala",
+    "category": "curries",
+    "price": 200,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 200
+      },
+      {
+        "name": "Full",
+        "price": 380
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 840,
+    "description": "Tandoori roasted chaap in rich butter tomato gravy.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/332d4905-3578-48f8-97d6-c9613160dfe3/Blue-Tribe-Foods-Ready-To-Eat-Afghani-Soya-Chaap.jpg",
+    "tags": [
+      "Chaap Butter Masala"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-soya-chaap-tawa",
+    "name": "Tawa Chaap",
+    "category": "curries",
+    "price": 200,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Half",
+        "price": 200
+      },
+      {
+        "name": "Full",
+        "price": 380
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 710,
+    "description": "Spicy street style tawa tossed soya chaap in semi-dry masala.",
+    "image": "https://cdn.zeptonow.com/production/ik-seo/cms/product_variant/332d4905-3578-48f8-97d6-c9613160dfe3/Blue-Tribe-Foods-Ready-To-Eat-Afghani-Soya-Chaap.jpg",
+    "tags": [
+      "Tawa Masala"
+    ],
+    "spiceLevel": "Spicy"
+  },
+  {
+    "id": "curry-chicken-gravies",
+    "name": "Masala Chicken / Tawa / Kadahi / Ghar Ka Chicken",
+    "category": "curries",
+    "price": 350,
+    "isVeg": false,
+    "variants": [
+      {
+        "name": "Masala Chicken Half",
+        "price": 350
+      },
+      {
+        "name": "Masala Chicken Full",
+        "price": 620
+      },
+      {
+        "name": "Tawa Chicken Half",
+        "price": 350
+      },
+      {
+        "name": "Tawa Chicken Full",
+        "price": 620
+      },
+      {
+        "name": "Kadahi Chicken Half",
+        "price": 350
+      },
+      {
+        "name": "Kadahi Chicken Full",
+        "price": 620
+      },
+      {
+        "name": "Ghar Ka Chicken Half",
+        "price": 350
+      },
+      {
+        "name": "Ghar Ka Chicken Full",
+        "price": 620
+      },
+      {
+        "name": "Chicken Curry Half",
+        "price": 350
+      },
+      {
+        "name": "Chicken Curry Full",
+        "price": 620
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 2450,
+    "description": "Authentic North Indian chicken curries cooked with whole spices, browned onions and fresh ginger-garlic.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Punjabi Gravy",
+      "Must Try"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-chicken-tikka-butter-masala",
+    "name": "Chicken Tikka Butter Masala",
+    "category": "curries",
+    "price": 400,
+    "isVeg": false,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1670,
+    "description": "Charcoal roasted boneless chicken tikka cooked in rich buttery makhani gravy.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Boneless Tikka Butter Masala"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "curry-chicken-biryani",
+    "name": "Chicken Biryani",
+    "category": "curries",
+    "price": 280,
+    "isVeg": false,
+    "rating": 4.8,
+    "reviewsCount": 1250,
+    "description": "Fragrant basmati rice layered with spiced chicken, mint, saffron and caramelized onions.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Dum Biryani"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-veg-biryani",
+    "name": "Veg Biryani",
+    "category": "curries",
+    "price": 250,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 880,
+    "description": "Aromatic basmati rice cooked on dum with mixed vegetables, paneer and whole spices.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Veg Dum Biryani"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-egg-curry",
+    "name": "Egg Curry",
+    "category": "curries",
+    "price": 300,
+    "isVeg": false,
+    "rating": 4.7,
+    "reviewsCount": 520,
+    "description": "Boiled and shallow-fried eggs simmered in rich spicy Punjabi curry.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Egg Special"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "curry-rice-sides",
+    "name": "Zeera Rice / Plain Steamed Rice / Raita",
+    "category": "curries",
+    "price": 150,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Plain Rice",
+        "price": 150
+      },
+      {
+        "name": "Zeera Rice",
+        "price": 180
+      },
+      {
+        "name": "Boondi / Veg Raita",
+        "price": 100
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 940,
+    "description": "Long grain fluffy basmati rice and refreshing spiced chilled curd.",
+    "image": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Sides & Rice"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "platter-duplex",
+    "name": "Duplex Platter (17 Pcs Feast)",
+    "category": "platters",
+    "price": 260,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1840,
+    "description": "Huge sharing combo: 6 pcs Mushroom Duplex + 6 pcs Paneer Fingers + 5 pcs Crispy Spring Rolls with cocktail dips.",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Family Feast",
+      "Best Value Snack"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "platter-tandoori",
+    "name": "Tandoori Platter",
+    "category": "platters",
+    "price": 280,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1620,
+    "description": "Malai Chaap + Masala Chaap + Paneer Tikka + 2 Mushroom Duplex + 2 Paneer Fingers.",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Tandoori Sampler"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "platter-chinese",
+    "name": "Chinese Grand Platter",
+    "category": "platters",
+    "price": 250,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.8,
+    "reviewsCount": 1540,
+    "description": "Veg Chowmein Noodles + 2 pcs Paneer Chilli Dry + 2 pcs Manchurian Gravy + 2 Veg Steamed Momos + 1 Cigar Roll.",
+    "image": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "All In One Chinese",
+      "Bestseller"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "thali-simple-veg",
+    "name": "Simple Veg Thali",
+    "category": "platters",
+    "price": 140,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 820,
+    "description": "Pocket friendly thali: Dal, seasonal sabzi, rice, 2 rotis and salad.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "₹140 Super Saver"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "thali-veg-regular",
+    "name": "Veg Thali",
+    "category": "platters",
+    "price": 180,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 940,
+    "description": "Dal Makhani, Paneer dish, Mix Vegetable, Steamed Rice, 2 Butter Rotis and Salad.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Wholesome Meal"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "thali-veg-raita",
+    "name": "Special Veg Thali With Raita",
+    "category": "platters",
+    "price": 200,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1210,
+    "description": "Dal Makhani, Shahi Paneer, Mix Veg, Jeera Rice, 2 Butter Rotis, Pickle, Salad and Boondi Raita.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Complete Feast"
+    ],
+    "spiceLevel": "Mild"
+  },
+  {
+    "id": "thali-non-veg",
+    "name": "Non Veg Thali",
+    "category": "platters",
+    "price": 250,
+    "isVeg": false,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1380,
+    "description": "Butter Chicken Gravy, Dal Makhani, Jeera Rice, 2 Butter Rotis, Salad, Pickle and Raita.",
+    "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chicken Feast Box"
+    ],
+    "spiceLevel": "Medium"
+  },
+  {
+    "id": "drink-mango-boba",
+    "name": "Mango Boba Tea with Cheese Foam",
+    "category": "beverages",
+    "price": 180,
+    "isVeg": true,
+    "isBestseller": true,
+    "hasVideo": true,
+    "videoUrl": "/videos/hero_video.webm",
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "size": "500 ml Cup",
+    "description": "Fresh milk-based Alphonso mango tea infused with chewy tapioca boba pearls and crowned with velvety salted cheese foam.",
+    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chewy Boba",
+      "Cheese Foam Top",
+      "Trending"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-choco-signature-boba",
+    "name": "Choco Signature Boba Tea",
+    "category": "beverages",
+    "price": 180,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 890,
+    "size": "500 ml Cup",
+    "description": "Decadent chocolate milk tea with brown sugar boba pearls and salted cream cheese foam.",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chocolate Boba"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-oreo-cloud-boba",
+    "name": "Oreo Cloud Boba Tea",
+    "category": "beverages",
+    "price": 180,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1120,
+    "size": "500 ml Cup",
+    "description": "Rich chocolate cookie milk with brown sugar tapioca pearls, topped with sweet cream cloud foam and crushed Oreo crumble.",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Chocolate & Cookie",
+      "Cheese Foam"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-blueberry-boba",
+    "name": "Blueberry Boba Tea",
+    "category": "beverages",
+    "price": 180,
+    "isVeg": true,
+    "rating": 4.7,
+    "reviewsCount": 640,
+    "size": "500 ml Cup",
+    "description": "Refreshing blueberry milk bubble tea topped with cheese foam.",
+    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Berry Boba"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-popping-boba",
+    "name": "Popping Boba (Peach / Strawberry)",
+    "category": "beverages",
+    "price": 130,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Peach (Small 350ml)",
+        "price": 130
+      },
+      {
+        "name": "Peach (Large 500ml)",
+        "price": 160
+      },
+      {
+        "name": "Strawberry (Small 350ml)",
+        "price": 130
+      },
+      {
+        "name": "Strawberry (Large 500ml)",
+        "price": 160
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 890,
+    "description": "Refreshing sparkling fruit soda filled with juicy popping pearls that burst with sweet fruit syrup in every sip!",
+    "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Bursting Pearls",
+      "Soda Based"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-cold-coffee",
+    "name": "Cold Coffee (Classic / Hazelnut / Caramel / Mocha)",
+    "category": "beverages",
+    "price": 120,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Classic (Small 350ml)",
+        "price": 120
+      },
+      {
+        "name": "Classic (Large 500ml)",
+        "price": 160
+      },
+      {
+        "name": "Hazelnut (Small 350ml)",
+        "price": 140
+      },
+      {
+        "name": "Hazelnut (Large 500ml)",
+        "price": 180
+      },
+      {
+        "name": "Caramel (Small 350ml)",
+        "price": 140
+      },
+      {
+        "name": "Caramel (Large 500ml)",
+        "price": 180
+      },
+      {
+        "name": "Mocha Frappe (Small 350ml)",
+        "price": 140
+      },
+      {
+        "name": "Mocha Frappe (Large 500ml)",
+        "price": 180
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 2240,
+    "description": "Slow-brewed dark espresso blended with creamy chilled milk and roasted hazelnut syrup. The perfect fast-food companion.",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Rich Aroma",
+      "Best Coffee in Sec 34"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-thick-shakes",
+    "name": "Thick Shakes (Oreo / Chocolate / Strawberry / Blueberry / Butterscotch)",
+    "category": "beverages",
+    "price": 120,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Chocolate Shake (Small)",
+        "price": 120
+      },
+      {
+        "name": "Chocolate Shake (Large)",
+        "price": 180
+      },
+      {
+        "name": "Oreo Shake (Small)",
+        "price": 140
+      },
+      {
+        "name": "Oreo Shake (Large)",
+        "price": 180
+      },
+      {
+        "name": "Strawberry Shake (Small)",
+        "price": 120
+      },
+      {
+        "name": "Strawberry Shake (Large)",
+        "price": 180
+      },
+      {
+        "name": "Blueberry Shake (Small)",
+        "price": 140
+      },
+      {
+        "name": "Blueberry Shake (Large)",
+        "price": 180
+      },
+      {
+        "name": "Butterscotch Shake (Small)",
+        "price": 120
+      },
+      {
+        "name": "Butterscotch Shake (Large)",
+        "price": 180
+      }
+    ],
+    "isBestseller": true,
+    "rating": 4.9,
+    "reviewsCount": 1890,
+    "description": "Super thick dairy milkshakes made with ice cream and real chocolate/fruit purees.",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Thick Milkshakes"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-cold-chocolate",
+    "name": "Cold Chocolate",
+    "category": "beverages",
+    "price": 120,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Cold Chocolate",
+        "price": 120
+      },
+      {
+        "name": "With Cheese Foam",
+        "price": 140
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 740,
+    "description": "Velvety chilled cocoa milk, optional topping of salted cheese foam.",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Rich Cocoa"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-mint-mojito",
+    "name": "Mint Mojito Mocktail",
+    "category": "beverages",
+    "price": 100,
+    "isVeg": true,
+    "rating": 4.8,
+    "reviewsCount": 1440,
+    "description": "Fresh garden spearmint leaves muddled with lime juice, raw cane sugar and chilled bubbly soda.",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Zesty Refreshment",
+      "Mocktail"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-mojitos-coolers",
+    "name": "Watermelon / Green Apple / Blue Ocean / Kala Khatta",
+    "category": "beverages",
+    "price": 100,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Watermelon Mojito",
+        "price": 100
+      },
+      {
+        "name": "Green Apple Mojito",
+        "price": 100
+      },
+      {
+        "name": "Blue Ocean Soda",
+        "price": 100
+      },
+      {
+        "name": "Kala Khatta Soda",
+        "price": 100
+      }
+    ],
+    "rating": 4.7,
+    "reviewsCount": 980,
+    "description": "Crisp fruit flavoured bubbly sodas served ice cold with lemon slices.",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Summer Coolers"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-sodas-ice-teas",
+    "name": "Lemon Soda / Masala Soda / Peach & Lemon Ice Tea",
+    "category": "beverages",
+    "price": 90,
+    "isVeg": true,
+    "variants": [
+      {
+        "name": "Lemon Soda",
+        "price": 90
+      },
+      {
+        "name": "Masala Soda",
+        "price": 90
+      },
+      {
+        "name": "Peach Ice Tea",
+        "price": 90
+      },
+      {
+        "name": "Lemon Ice Tea",
+        "price": 90
+      }
+    ],
+    "rating": 4.8,
+    "reviewsCount": 1120,
+    "description": "Refreshing fizzy coolers and brewed chilled ice teas.",
+    "image": "https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Only ₹90"
+    ],
+    "spiceLevel": "Sweet"
+  },
+  {
+    "id": "drink-fruit-beer",
+    "name": "Chilled Fruit Beer",
+    "category": "beverages",
+    "price": 80,
+    "isVeg": true,
+    "isBestseller": true,
+    "rating": 5,
+    "reviewsCount": 2680,
+    "description": "Chandigarh street food legend! Frothy non-alcoholic fruit beer served ice cold with sweet malty undertones.",
+    "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    "tags": [
+      "Zero Alcohol",
+      "Chandigarh Tradition",
+      "Only ₹80"
+    ],
+    "spiceLevel": "Sweet"
   }
 ];
 
 export const DELIVERY_ZONES = [
-  { id: 'chandigarh', name: 'Chandigarh (Sector 1 - 63)', minFreeOrder: 500, deliveryFee: 40, eta: '25-35 mins' },
-  { id: 'mohali', name: 'Mohali (Phase 1 - 11, Sectors)', minFreeOrder: 700, deliveryFee: 60, eta: '35-45 mins' },
-  { id: 'panchkula', name: 'Panchkula (Sectors 1 - 25)', minFreeOrder: 600, deliveryFee: 50, eta: '30-40 mins' },
-  { id: 'pickup', name: 'Self Pickup (Booth 49, Sector 34-C)', minFreeOrder: 0, deliveryFee: 0, eta: '15 mins ready' },
+  {
+    "id": "chandigarh",
+    "name": "Chandigarh (Sector 1 - 63)",
+    "minFreeOrder": 500,
+    "deliveryFee": 40,
+    "eta": "25-35 mins"
+  },
+  {
+    "id": "mohali",
+    "name": "Mohali (Phase 1 - 11, Sectors)",
+    "minFreeOrder": 700,
+    "deliveryFee": 60,
+    "eta": "35-45 mins"
+  },
+  {
+    "id": "panchkula",
+    "name": "Panchkula (Sectors 1 - 25)",
+    "minFreeOrder": 600,
+    "deliveryFee": 50,
+    "eta": "30-40 mins"
+  },
+  {
+    "id": "pickup",
+    "name": "Self Pickup (Booth 49, Sector 34-C)",
+    "minFreeOrder": 0,
+    "deliveryFee": 0,
+    "eta": "15 mins ready"
+  }
 ];
 
 export const PAYMENT_MODES = [
-  { id: 'upi_delivery', label: 'UPI on Delivery (GPay / PhonePe / Paytm)', icon: '📱', desc: 'Scan delivery partner QR upon arrival' },
-  { id: 'cod', label: 'Cash on Delivery (COD)', icon: '💵', desc: 'Pay cash directly when order reaches your door' },
-  { id: 'upi_instant', label: 'Pay Now via UPI QR', icon: '⚡', desc: 'Instant QR code will be generated to pay right away' },
+  {
+    "id": "upi_delivery",
+    "label": "UPI on Delivery (GPay / PhonePe / Paytm)",
+    "icon": "📱",
+    "desc": "Scan delivery partner QR upon arrival"
+  },
+  {
+    "id": "cod",
+    "label": "Cash on Delivery (COD)",
+    "icon": "💵",
+    "desc": "Pay cash directly when order reaches your door"
+  },
+  {
+    "id": "upi_instant",
+    "label": "Pay Now via UPI QR",
+    "icon": "⚡",
+    "desc": "Instant QR code will be generated to pay right away"
+  }
 ];
 
 export const OUTLET_INFO = {
-  name: 'Chaps-In Fast Food',
-  formerName: 'Chaplin Fast Food (Est. 1994)',
-  whatsappNumber: '918699822549',
-  displayPhone: '+91 86998 22549',
-  altPhone: '+91 86999 64454',
-  landline: '0172-5007759',
-  hours: '11:30 AM – 11:00 PM (All 7 Days)',
-  zomatoUrl: 'https://zomato.onelink.me/xqzv/grkmtcli',
-  instagramUrl: 'https://www.instagram.com/chaps_in_fastfood?exln=dzA0dXJtaDRvYXR1',
-  mapsUrl: 'https://www.google.com/maps/place/Chaps-In+Fast+Food/@30.7067492,76.7678315,13z/data=!4m9!1m2!2m1!1schaps+in+fast+food!3m5!1s0x390fec4d314e2e9f:0x5937865d89cbcd9a!8m2!3d30.7182389!4d76.7665822',
-  branches: [
+  "name": "Chaps-In Fast Food",
+  "formerName": "Chaplin Fast Food (Est. 1994)",
+  "whatsappNumber": "918699822549",
+  "displayPhone": "+91 86998 22549",
+  "altPhone": "+91 86999 64454",
+  "landline": "0172-5007759",
+  "hours": "11:30 AM – 11:00 PM (All 7 Days)",
+  "zomatoUrl": "https://zomato.onelink.me/xqzv/grkmtcli",
+  "instagramUrl": "https://www.instagram.com/chaps_in_fastfood?exln=dzA0dXJtaDRvYXR1",
+  "mapsUrl": "https://www.google.com/maps/place/Chaps-In+Fast+Food/@30.7067492,76.7678315,13z/data=!4m9!1m2!2m1!1schaps+in+fast+food!3m5!1s0x390fec4d314e2e9f:0x5937865d89cbcd9a!8m2!3d30.7182389!4d76.7665822",
+  "branches": [
     {
-      name: 'Chaps-In Fast Food (Main Outlet)',
-      address: 'Booth No. 49, Sector 34-C, Chandigarh, 160022 (Near Uttam Sweets)',
-      phone: '+91 86998 22549',
-      isPrimary: true
+      "name": "Chaps-In Fast Food (Main Outlet)",
+      "address": "Booth No. 49, Sector 34-C, Chandigarh, 160022 (Near Uttam Sweets)",
+      "phone": "+91 86998 22549",
+      "isPrimary": true
     },
     {
-      name: 'Chaps-In Bites',
-      address: 'Booth No. 160-161, Sector 34-C, Chandigarh, 160022',
-      phone: '+91 86999 64454',
-      isPrimary: false
+      "name": "Chaps-In Bites",
+      "address": "Booth No. 160-161, Sector 34-C, Chandigarh, 160022",
+      "phone": "+91 86999 64454",
+      "isPrimary": false
     },
     {
-      name: 'Chaps-In Panchkula',
-      address: 'Shop No. 189, Sector 16, Panchkula, Haryana',
-      phone: '+91 86998 22549',
-      isPrimary: false
+      "name": "Chaps-In Panchkula",
+      "address": "Shop No. 189, Sector 16, Panchkula, Haryana",
+      "phone": "+91 86998 22549",
+      "isPrimary": false
     }
   ]
 };
