@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ShoppingBag, Search, Phone, MapPin, Flame, Utensils, X, Sparkles } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
 import { OUTLET_INFO } from '../data/menuData';
+import chapsLogo from '../assets/chaps_logo.jpeg';
 
 export default function Navbar({
   cartCount,
@@ -52,7 +53,7 @@ export default function Navbar({
             <div className="relative group">
               <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-[#FFD966] shadow-md transition-transform group-hover:scale-105 bg-black flex items-center justify-center">
                 <img 
-                  src="/chaps_logo.jpeg" 
+                  src={chapsLogo} 
                   alt="Chaps-In Fast Food Logo" 
                   className="w-full h-full object-cover"
                 />

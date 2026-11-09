@@ -63,7 +63,7 @@ export const INSTAGRAM_REELS = [
     views: '128K',
     likes: '14.2K',
     dish: 'Cheese Naan With Gravy',
-    videoUrl: '/videos/hero_video.webm',
+    videoUrl: './videos/hero_video.webm',
     thumbnail: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80'
   },
   {
@@ -72,7 +72,7 @@ export const INSTAGRAM_REELS = [
     views: '245K',
     likes: '28.9K',
     dish: 'Kurkure Momos',
-    videoUrl: '/videos/delicious_food.webm',
+    videoUrl: './videos/delicious_food.webm',
     thumbnail: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=600&q=80'
   },
   {
@@ -81,7 +81,7 @@ export const INSTAGRAM_REELS = [
     views: '184K',
     likes: '19.4K',
     dish: 'Chaplin Special Noodles',
-    videoUrl: '/videos/hero_video.webm',
+    videoUrl: './videos/hero_video.webm',
     thumbnail: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=600&q=80'
   },
   {
@@ -90,7 +90,7 @@ export const INSTAGRAM_REELS = [
     views: '156K',
     likes: '16.8K',
     dish: 'Butter Chicken',
-    videoUrl: '/videos/delicious_food.webm',
+    videoUrl: './videos/delicious_food.webm',
     thumbnail: 'https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=600&q=80'
   }
 ];

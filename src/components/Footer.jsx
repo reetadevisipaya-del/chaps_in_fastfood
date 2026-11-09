@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, MapPin, ExternalLink, Heart, FileText, ArrowUp } from 'lucide-react';
 import InstagramIcon from './InstagramIcon';
 import { OUTLET_INFO } from '../data/menuData';
+import chapsLogo from '../assets/chaps_logo.jpeg';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -19,7 +20,7 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#FFD966] bg-black shrink-0">
                 <img
-                  src="/chaps_logo.jpeg"
+                  src={chapsLogo}
                   alt="Chaps In Fast Food"
                   className="w-full h-full object-cover"
                 />

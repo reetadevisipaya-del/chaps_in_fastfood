@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Flame, Star, MessageSquare, ArrowRight, ExternalLink, Clock, Sparkles } from 'lucide-react';
 import { OUTLET_INFO } from '../data/menuData';
+import chapsLogo from '../assets/chaps_logo.jpeg';
+import heroMomos from '../assets/hero_momos.jpg';
+import heroCheeseNaan from '../assets/hero_cheesenaan.jpg';
+import heroBoba from '../assets/hero_boba.jpg';
 
 const HERO_FEATURED_DISHES = [
   {
@@ -10,7 +14,7 @@ const HERO_FEATURED_DISHES = [
     pieces: '8 Pieces',
     tag: 'Crispiest in Tricity',
     desc: 'Golden crunchy batter coating, juicy paneer core & fiery momo chutney',
-    image: 'https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1000&q=85',
+    image: heroMomos,
     emoji: '🥟'
   },
   {
@@ -20,7 +24,7 @@ const HERO_FEATURED_DISHES = [
     pieces: 'Fresh Clay Tandoor',
     tag: 'Molten Cheese Pull',
     desc: 'Stuffed with 100% mozzarella & Amul cheese, served with rich Makhani gravy',
-    image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1000&q=85',
+    image: heroCheeseNaan,
     emoji: '🧀'
   },
   {
@@ -30,7 +34,7 @@ const HERO_FEATURED_DISHES = [
     pieces: '500 ml Cup',
     tag: 'Trending Drink',
     desc: 'Alphonso mango milk tea with chewy tapioca pearls and salted cheese foam',
-    image: 'https://images.unsplash.com/photo-1558857563-b37fe8466b09?auto=format&fit=crop&w=1000&q=85',
+    image: heroBoba,
     emoji: '🧋'
   }
 ];
@@ -146,15 +150,19 @@ export default function Hero({ onExploreMenu, onOpenReels }) {
               <div className="relative bg-white rounded-3xl p-3 sm:p-4 shadow-2xl border-4 border-[#FFD966] overflow-hidden transform hover:scale-[1.01] transition-transform duration-300">
                 
                 {/* Visual Image Showcase Area */}
-                <div className="relative h-64 sm:h-80 md:h-88 rounded-2xl overflow-hidden bg-stone-900 group">
+                <div className="relative h-64 sm:h-80 md:h-88 rounded-2xl overflow-hidden bg-gradient-to-br from-[#29211E] to-[#45322b] group">
                   <img
                     src={activeDish.image}
                     alt={activeDish.name}
+                    loading="eager"
+                    onError={(e) => {
+                      e.currentTarget.src = heroMomos;
+                    }}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Gradient Overlay for Text Readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent pointer-events-none"></div>
 
                   {/* Top Live Badge */}
                   <div className="absolute top-3 left-3 bg-[#F4512C] text-white text-[11px] font-black px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5 shadow-md">
@@ -164,7 +172,7 @@ export default function Hero({ onExploreMenu, onOpenReels }) {
 
                   {/* Top Logo Watermark */}
                   <div className="absolute top-3 right-3 w-12 h-12 rounded-full overflow-hidden border-2 border-[#FFD966] shadow-md bg-black">
-                    <img src="/chaps_logo.jpeg" alt="Chaps Logo" className="w-full h-full object-cover" />
+                    <img src={chapsLogo} alt="Chaps Logo" className="w-full h-full object-cover" />
                   </div>
 
                   {/* Bottom Dish Details */}

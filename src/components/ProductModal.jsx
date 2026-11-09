@@ -33,10 +33,13 @@ export default function ProductModal({ item, initialVariant, onClose, onAddToCar
         </button>
 
         {/* Media Area: High Resolution Photo */}
-        <div className="relative h-60 sm:h-72 w-full bg-stone-900 shrink-0">
+        <div className="relative h-60 sm:h-72 w-full bg-gradient-to-br from-[#29211E] to-[#45322b] shrink-0">
           <img
             src={item.image}
             alt={item.name}
+            onError={(e) => {
+              e.currentTarget.src = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80';
+            }}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
