@@ -21,6 +21,7 @@ dist-ssr
 # Temporary and design assets
 *.pdf
 *.ps1
+scratch/
 
 # Editor and OS files
 .vscode/*
